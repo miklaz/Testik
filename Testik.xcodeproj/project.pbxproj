@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		129530FA267296B40041F55F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530F9267296B40041F55F /* AppDelegate.swift */; };
+		129530FC267296B40041F55F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530FB267296B40041F55F /* SceneDelegate.swift */; };
+		129530FE267296B40041F55F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530FD267296B40041F55F /* ViewController.swift */; };
+		12953101267296B40041F55F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129530FF267296B40041F55F /* Main.storyboard */; };
+		12953103267296B60041F55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12953102267296B60041F55F /* Assets.xcassets */; };
+		12953106267296B60041F55F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12953104267296B60041F55F /* LaunchScreen.storyboard */; };
+		12953111267296B60041F55F /* TestikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12953110267296B60041F55F /* TestikTests.swift */; };
+		1295311C267296B60041F55F /* TestikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295311B267296B60041F55F /* TestikUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1295310D267296B60041F55F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 129530EE267296B40041F55F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 129530F5267296B40041F55F;
+			remoteInfo = Testik;
+		};
+		12953118267296B60041F55F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 129530EE267296B40041F55F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 129530F5267296B40041F55F;
+			remoteInfo = Testik;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		129530F6267296B40041F55F /* Testik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		129530F9267296B40041F55F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		129530FB267296B40041F55F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		129530FD267296B40041F55F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12953100267296B40041F55F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12953102267296B60041F55F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12953105267296B60041F55F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12953107267296B60041F55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1295310C267296B60041F55F /* TestikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12953110267296B60041F55F /* TestikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestikTests.swift; sourceTree = "<group>"; };
+		12953112267296B60041F55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12953117267296B60041F55F /* TestikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1295311B267296B60041F55F /* TestikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestikUITests.swift; sourceTree = "<group>"; };
+		1295311D267296B60041F55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		129530F3267296B40041F55F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12953109267296B60041F55F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12953114267296B60041F55F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		129530ED267296B40041F55F = {
+			isa = PBXGroup;
+			children = (
+				129530F8267296B40041F55F /* Testik */,
+				1295310F267296B60041F55F /* TestikTests */,
+				1295311A267296B60041F55F /* TestikUITests */,
+				129530F7267296B40041F55F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		129530F7267296B40041F55F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				129530F6267296B40041F55F /* Testik.app */,
+				1295310C267296B60041F55F /* TestikTests.xctest */,
+				12953117267296B60041F55F /* TestikUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		129530F8267296B40041F55F /* Testik */ = {
+			isa = PBXGroup;
+			children = (
+				129530F9267296B40041F55F /* AppDelegate.swift */,
+				129530FB267296B40041F55F /* SceneDelegate.swift */,
+				129530FD267296B40041F55F /* ViewController.swift */,
+				129530FF267296B40041F55F /* Main.storyboard */,
+				12953102267296B60041F55F /* Assets.xcassets */,
+				12953104267296B60041F55F /* LaunchScreen.storyboard */,
+				12953107267296B60041F55F /* Info.plist */,
+			);
+			path = Testik;
+			sourceTree = "<group>";
+		};
+		1295310F267296B60041F55F /* TestikTests */ = {
+			isa = PBXGroup;
+			children = (
+				12953110267296B60041F55F /* TestikTests.swift */,
+				12953112267296B60041F55F /* Info.plist */,
+			);
+			path = TestikTests;
+			sourceTree = "<group>";
+		};
+		1295311A267296B60041F55F /* TestikUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1295311B267296B60041F55F /* TestikUITests.swift */,
+				1295311D267296B60041F55F /* Info.plist */,
+			);
+			path = TestikUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		129530F5267296B40041F55F /* Testik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12953120267296B60041F55F /* Build configuration list for PBXNativeTarget "Testik" */;
+			buildPhases = (
+				129530F2267296B40041F55F /* Sources */,
+				129530F3267296B40041F55F /* Frameworks */,
+				129530F4267296B40041F55F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Testik;
+			productName = Testik;
+			productReference = 129530F6267296B40041F55F /* Testik.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1295310B267296B60041F55F /* TestikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12953123267296B60041F55F /* Build configuration list for PBXNativeTarget "TestikTests" */;
+			buildPhases = (
+				12953108267296B60041F55F /* Sources */,
+				12953109267296B60041F55F /* Frameworks */,
+				1295310A267296B60041F55F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1295310E267296B60041F55F /* PBXTargetDependency */,
+			);
+			name = TestikTests;
+			productName = TestikTests;
+			productReference = 1295310C267296B60041F55F /* TestikTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12953116267296B60041F55F /* TestikUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12953126267296B60041F55F /* Build configuration list for PBXNativeTarget "TestikUITests" */;
+			buildPhases = (
+				12953113267296B60041F55F /* Sources */,
+				12953114267296B60041F55F /* Frameworks */,
+				12953115267296B60041F55F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12953119267296B60041F55F /* PBXTargetDependency */,
+			);
+			name = TestikUITests;
+			productName = TestikUITests;
+			productReference = 12953117267296B60041F55F /* TestikUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		129530EE267296B40041F55F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					129530F5267296B40041F55F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1295310B267296B60041F55F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 129530F5267296B40041F55F;
+					};
+					12953116267296B60041F55F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 129530F5267296B40041F55F;
+					};
+				};
+			};
+			buildConfigurationList = 129530F1267296B40041F55F /* Build configuration list for PBXProject "Testik" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 129530ED267296B40041F55F;
+			productRefGroup = 129530F7267296B40041F55F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				129530F5267296B40041F55F /* Testik */,
+				1295310B267296B60041F55F /* TestikTests */,
+				12953116267296B60041F55F /* TestikUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		129530F4267296B40041F55F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12953106267296B60041F55F /* LaunchScreen.storyboard in Resources */,
+				12953103267296B60041F55F /* Assets.xcassets in Resources */,
+				12953101267296B40041F55F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1295310A267296B60041F55F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12953115267296B60041F55F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		129530F2267296B40041F55F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				129530FE267296B40041F55F /* ViewController.swift in Sources */,
+				129530FA267296B40041F55F /* AppDelegate.swift in Sources */,
+				129530FC267296B40041F55F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12953108267296B60041F55F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12953111267296B60041F55F /* TestikTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12953113267296B60041F55F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1295311C267296B60041F55F /* TestikUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1295310E267296B60041F55F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 129530F5267296B40041F55F /* Testik */;
+			targetProxy = 1295310D267296B60041F55F /* PBXContainerItemProxy */;
+		};
+		12953119267296B60041F55F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 129530F5267296B40041F55F /* Testik */;
+			targetProxy = 12953118267296B60041F55F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		129530FF267296B40041F55F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12953100267296B40041F55F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12953104267296B60041F55F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12953105267296B60041F55F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1295311E267296B60041F55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1295311F267296B60041F55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12953121267296B60041F55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6888952VPD;
+				INFOPLIST_FILE = Testik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.miklaz.Testik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12953122267296B60041F55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6888952VPD;
+				INFOPLIST_FILE = Testik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.miklaz.Testik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12953124267296B60041F55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6888952VPD;
+				INFOPLIST_FILE = TestikTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.miklaz.TestikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Testik.app/Testik";
+			};
+			name = Debug;
+		};
+		12953125267296B60041F55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6888952VPD;
+				INFOPLIST_FILE = TestikTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.miklaz.TestikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Testik.app/Testik";
+			};
+			name = Release;
+		};
+		12953127267296B60041F55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6888952VPD;
+				INFOPLIST_FILE = TestikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.miklaz.TestikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Testik;
+			};
+			name = Debug;
+		};
+		12953128267296B60041F55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6888952VPD;
+				INFOPLIST_FILE = TestikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.miklaz.TestikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Testik;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		129530F1267296B40041F55F /* Build configuration list for PBXProject "Testik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1295311E267296B60041F55F /* Debug */,
+				1295311F267296B60041F55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12953120267296B60041F55F /* Build configuration list for PBXNativeTarget "Testik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12953121267296B60041F55F /* Debug */,
+				12953122267296B60041F55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12953123267296B60041F55F /* Build configuration list for PBXNativeTarget "TestikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12953124267296B60041F55F /* Debug */,
+				12953125267296B60041F55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12953126267296B60041F55F /* Build configuration list for PBXNativeTarget "TestikUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12953127267296B60041F55F /* Debug */,
+				12953128267296B60041F55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 129530EE267296B40041F55F /* Project object */;
+}
