@@ -45,17 +45,35 @@
                                     <segue destination="8L0-h3-1eo" kind="show" id="Gen-Ab-4dp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAv-fn-bJo">
+                                <rect key="frame" x="172.5" y="553" width="69" height="30"/>
+                                <state key="normal" title="Acc&amp;Gyro"/>
+                                <connections>
+                                    <segue destination="L4S-Xc-val" kind="show" id="cgC-6A-gne"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-vo-hAR">
+                                <rect key="frame" x="306.5" y="553" width="61" height="30"/>
+                                <state key="normal" title="Distanсe"/>
+                                <connections>
+                                    <segue destination="CuE-qT-Z7q" kind="show" id="fQC-00-cD3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DAv-fn-bJo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="7kf-oO-Mzw"/>
                             <constraint firstItem="yUO-qO-Zuv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bi6-y7-ISd"/>
+                            <constraint firstItem="DAv-fn-bJo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BsD-Gc-kKS"/>
                             <constraint firstItem="DNz-Hf-c7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IM3-bK-tzy"/>
                             <constraint firstItem="DNz-Hf-c7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZBa-sD-1YX"/>
                             <constraint firstItem="8fS-X3-tu2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="jJB-uD-8aC"/>
                             <constraint firstItem="yUO-qO-Zuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="130" id="kqR-31-VFo"/>
                             <constraint firstItem="8fS-X3-tu2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mCS-yy-Qh5"/>
                             <constraint firstItem="JjG-qm-nmD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qTZ-J5-M6F"/>
+                            <constraint firstItem="iXN-vo-hAR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="v07-zE-fF5"/>
+                            <constraint firstItem="iXN-vo-hAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="130" id="wTJ-fb-wRh"/>
                             <constraint firstItem="JjG-qm-nmD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-130" id="zmo-kN-F61"/>
                         </constraints>
                     </view>
@@ -142,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yT-18-Nnn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="995.65217391304361" y="59.598214285714285"/>
+            <point key="canvasLocation" x="2004" y="-650"/>
         </scene>
         <!--TouchVC-->
         <scene sceneID="K6l-Ng-Xny">
@@ -259,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elO-hR-BmF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="719"/>
+            <point key="canvasLocation" x="2920" y="-650"/>
         </scene>
         <!--Contrast GammaVC-->
         <scene sceneID="ZiM-9o-Tsg">
@@ -326,7 +344,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLS-8J-SJG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="995.65217391304361" y="1406.9196428571429"/>
+            <point key="canvasLocation" x="3826" y="-650"/>
+        </scene>
+        <!--AccelerVC-->
+        <scene sceneID="AaE-yW-b6N">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="L4S-Xc-val" customClass="AccelerVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Toj-SJ-gDt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4P-hx-EgA">
+                                <rect key="frame" x="20" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Buf-PN-d3G"/>
+                                    <constraint firstAttribute="height" constant="45" id="D1T-Vp-mK1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="✕"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="L4S-Xc-val" eventType="touchUpInside" id="5oL-PM-Nha"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StatusLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2u-nK-eQc">
+                                <rect key="frame" x="162" y="307.5" width="90.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="52a-Ro-Am4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="E4P-hx-EgA" firstAttribute="top" secondItem="52a-Ro-Am4" secondAttribute="top" constant="20" id="B9e-2W-o1h"/>
+                            <constraint firstItem="H2u-nK-eQc" firstAttribute="centerY" secondItem="Toj-SJ-gDt" secondAttribute="centerY" constant="-130" id="DvP-TE-b7s"/>
+                            <constraint firstItem="E4P-hx-EgA" firstAttribute="leading" secondItem="52a-Ro-Am4" secondAttribute="leading" constant="20" id="K3m-cj-gJS"/>
+                            <constraint firstItem="H2u-nK-eQc" firstAttribute="centerX" secondItem="Toj-SJ-gDt" secondAttribute="centerX" id="yHE-sG-dyk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qR9-Ts-JvP"/>
+                    <connections>
+                        <outlet property="dismissButton" destination="E4P-hx-EgA" id="AQt-LY-cTx"/>
+                        <outlet property="statusLabel" destination="H2u-nK-eQc" id="cfj-hC-k14"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rlp-V5-pgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="688"/>
+        </scene>
+        <!--DistanсeVC-->
+        <scene sceneID="2ms-g5-24D">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="CuE-qT-Z7q" customClass="DistanсeVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RDM-i0-EUB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWS-Dd-3cP">
+                                <rect key="frame" x="20" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="7Rd-7e-wwM"/>
+                                    <constraint firstAttribute="height" constant="45" id="reC-zu-aJD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="✕"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="CuE-qT-Z7q" eventType="touchUpInside" id="znE-82-hxa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StatusLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2n-6W-Z6h">
+                                <rect key="frame" x="162" y="307.5" width="90.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gep-eS-9nR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JWS-Dd-3cP" firstAttribute="leading" secondItem="gep-eS-9nR" secondAttribute="leading" constant="20" id="Fpr-VQ-7N6"/>
+                            <constraint firstItem="h2n-6W-Z6h" firstAttribute="centerY" secondItem="RDM-i0-EUB" secondAttribute="centerY" constant="-130" id="NuN-Pq-yVO"/>
+                            <constraint firstItem="h2n-6W-Z6h" firstAttribute="centerX" secondItem="RDM-i0-EUB" secondAttribute="centerX" id="Ssg-j2-oYi"/>
+                            <constraint firstItem="JWS-Dd-3cP" firstAttribute="top" secondItem="gep-eS-9nR" secondAttribute="top" constant="20" id="pGA-dA-GG3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gUl-Hp-jfr"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="h2n-6W-Z6h" id="KwQ-kl-iaH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfT-fi-ecO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="688"/>
         </scene>
     </scenes>
     <resources>
