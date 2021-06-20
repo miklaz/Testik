@@ -23,6 +23,12 @@ class RGB_VC: UIViewController {
         super.viewDidLoad()
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         self.colorView.addGestureRecognizer(tapGestureRecognizer)
+        //UIApplication.shared.isStatusBarHidden = true
+        
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+         return true
     }
     
     @objc func handleTap() {

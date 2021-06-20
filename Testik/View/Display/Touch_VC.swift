@@ -10,6 +10,8 @@ import UIKit
 
 class Canvas: UIView {
     
+    
+    
     override func draw(_ rect: CGRect) {
         // custom dawing
         super.draw(rect)
@@ -39,10 +41,10 @@ class Canvas: UIView {
             }
         }
         
-
-        
         context.strokePath()
     }
+    
+    
     
     //var line = [CGPoint]()
     var lines = [[CGPoint]]()
@@ -91,6 +93,10 @@ class Touch_VC: UIViewController {
             print ("lol")
         }
         
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+         return true
     }
     
     @IBAction func dismissAction(_ sender: Any) {

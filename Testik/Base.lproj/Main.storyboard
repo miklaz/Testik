@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,8 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjG-qm-nmD">
-                                <rect key="frame" x="78.5" y="433" width="53" height="30"/>
-                                <state key="normal" title="TOUCH"/>
+                                <rect key="frame" x="56" y="433" width="42" height="30"/>
+                                <state key="normal" title="Touch"/>
                                 <connections>
                                     <segue destination="x9e-7h-TYH" kind="show" id="hBa-AS-eup"/>
                                 </connections>
@@ -31,10 +32,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUO-qO-Zuv">
-                                <rect key="frame" x="282.5" y="433" width="35" height="30"/>
+                                <rect key="frame" x="319.5" y="433" width="35" height="30"/>
                                 <state key="normal" title="BWG"/>
                                 <connections>
                                     <segue destination="Kbv-rd-vaX" kind="show" id="vHF-Lp-0hd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fS-X3-tu2">
+                                <rect key="frame" x="177" y="493" width="60" height="30"/>
+                                <state key="normal" title="Contrast"/>
+                                <connections>
+                                    <segue destination="8L0-h3-1eo" kind="show" id="Gen-Ab-4dp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,11 +50,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yUO-qO-Zuv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bi6-y7-ISd"/>
-                            <constraint firstItem="DNz-Hf-c7c" firstAttribute="leading" secondItem="JjG-qm-nmD" secondAttribute="trailing" constant="60" id="IBf-8i-iq9"/>
                             <constraint firstItem="DNz-Hf-c7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IM3-bK-tzy"/>
                             <constraint firstItem="DNz-Hf-c7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZBa-sD-1YX"/>
-                            <constraint firstItem="yUO-qO-Zuv" firstAttribute="leading" secondItem="DNz-Hf-c7c" secondAttribute="trailing" constant="60" id="b3Q-sy-lGa"/>
+                            <constraint firstItem="8fS-X3-tu2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="jJB-uD-8aC"/>
+                            <constraint firstItem="yUO-qO-Zuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="130" id="kqR-31-VFo"/>
+                            <constraint firstItem="8fS-X3-tu2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mCS-yy-Qh5"/>
                             <constraint firstItem="JjG-qm-nmD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qTZ-J5-M6F"/>
+                            <constraint firstItem="JjG-qm-nmD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-130" id="zmo-kN-F61"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -72,11 +82,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FpI-cw-b4f">
-                                        <rect key="frame" x="119" y="632.5" width="176" height="32"/>
+                                        <rect key="frame" x="97" y="632.5" width="220" height="32"/>
                                         <color key="backgroundColor" white="1" alpha="0.65301262842465757" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="Kvf-Hw-8ue"/>
-                                            <constraint firstAttribute="width" constant="176" id="piA-pO-DAO"/>
+                                            <constraint firstAttribute="width" constant="220" id="piA-pO-DAO"/>
                                         </constraints>
                                         <segments>
                                             <segment title="Red"/>
@@ -189,10 +199,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3ix-sU-98P">
-                                        <rect key="frame" x="119" y="632.5" width="176" height="32"/>
+                                        <rect key="frame" x="97" y="632.5" width="220" height="32"/>
                                         <color key="backgroundColor" white="1" alpha="0.65301262839999996" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="176" id="aPP-BC-XU5"/>
+                                            <constraint firstAttribute="width" constant="220" id="aPP-BC-XU5"/>
                                             <constraint firstAttribute="height" constant="31" id="nwv-A2-NfJ"/>
                                         </constraints>
                                         <segments>
@@ -219,7 +229,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="3ix-sU-98P" firstAttribute="centerY" secondItem="BkL-ZO-lCt" secondAttribute="centerY" constant="200" id="3Wm-Bg-dLI"/>
                                     <constraint firstItem="7WD-13-hOV" firstAttribute="centerY" secondItem="BkL-ZO-lCt" secondAttribute="centerY" constant="-100" id="Jii-tv-q9Q"/>
@@ -251,8 +261,76 @@
             </objects>
             <point key="canvasLocation" x="996" y="719"/>
         </scene>
+        <!--Contrast GammaVC-->
+        <scene sceneID="ZiM-9o-Tsg">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="8L0-h3-1eo" customClass="Contrast_Gamma_VC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AlK-jV-3ya">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contrast_iphone11" translatesAutoresizingMaskIntoConstraints="NO" id="AI1-Tr-K61">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K30-Pb-raF">
+                                <rect key="frame" x="20" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4g3-zF-tUN"/>
+                                    <constraint firstAttribute="width" constant="45" id="HVp-On-WrC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="✕"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="8L0-h3-1eo" eventType="touchUpInside" id="Bkp-2w-Is4"/>
+                                    <action selector="dismissAction:" destination="Kbv-rd-vaX" eventType="touchUpInside" id="Cqk-a2-Bd9"/>
+                                    <action selector="dismissAction:" destination="x9e-7h-TYH" eventType="touchUpInside" id="TyO-eJ-hIu"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sfy-7O-R4r">
+                                <rect key="frame" x="97" y="811" width="220" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="0.65301262839999996" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="2jq-bw-Hyq"/>
+                                    <constraint firstAttribute="width" constant="220" id="o2R-ic-S7p"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Contrast"/>
+                                    <segment title="Gradient"/>
+                                    <segment title="Gamma"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeColor:" destination="Kbv-rd-vaX" eventType="valueChanged" id="4ZI-gD-IA3"/>
+                                    <action selector="changeColor:" destination="8L0-h3-1eo" eventType="valueChanged" id="cFq-bV-1uT"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0zI-wV-Irg"/>
+                        <color key="backgroundColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="K30-Pb-raF" firstAttribute="leading" secondItem="0zI-wV-Irg" secondAttribute="leading" constant="20" id="6iE-0R-YdQ"/>
+                            <constraint firstItem="AI1-Tr-K61" firstAttribute="top" secondItem="AlK-jV-3ya" secondAttribute="top" id="EYg-0e-JJq"/>
+                            <constraint firstAttribute="bottom" secondItem="AI1-Tr-K61" secondAttribute="bottom" id="JBr-mZ-OsQ"/>
+                            <constraint firstItem="K30-Pb-raF" firstAttribute="top" secondItem="0zI-wV-Irg" secondAttribute="top" constant="20" id="Psi-eX-9Ba"/>
+                            <constraint firstItem="AI1-Tr-K61" firstAttribute="leading" secondItem="0zI-wV-Irg" secondAttribute="leading" id="RXp-AK-qLN"/>
+                            <constraint firstItem="AI1-Tr-K61" firstAttribute="trailing" secondItem="0zI-wV-Irg" secondAttribute="trailing" id="g5a-MC-esY"/>
+                            <constraint firstItem="0zI-wV-Irg" firstAttribute="bottom" secondItem="sfy-7O-R4r" secondAttribute="bottom" constant="20" id="gBg-xt-mUu"/>
+                            <constraint firstItem="sfy-7O-R4r" firstAttribute="centerX" secondItem="AlK-jV-3ya" secondAttribute="centerX" id="oRg-xm-6Tg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="N8j-xq-IjJ"/>
+                    <connections>
+                        <outlet property="colorImage" destination="AI1-Tr-K61" id="dMB-bA-V1u"/>
+                        <outlet property="segmentControl" destination="sfy-7O-R4r" id="l4g-cE-FnS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLS-8J-SJG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995.65217391304361" y="1406.9196428571429"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Contrast_iphone11" width="828" height="1792"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

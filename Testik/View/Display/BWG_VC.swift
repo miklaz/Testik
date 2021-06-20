@@ -25,6 +25,10 @@ class BWG_VC: UIViewController {
         self.colorView.addGestureRecognizer(tapGestureRecognizer)
     }
     
+    override var prefersStatusBarHidden: Bool {
+         return true
+    }
+    
     @objc func handleTap() {
         self.isBleach = !self.isBleach
         self.segmentControl.alpha = self.isBleach ? 0 : 1.0
