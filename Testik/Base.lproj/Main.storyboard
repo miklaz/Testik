@@ -80,6 +80,13 @@
                                     <segue destination="1C6-y9-Bme" kind="show" id="Cmg-Hw-538"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsI-Sj-Em3">
+                                <rect key="frame" x="318.5" y="673" width="37" height="30"/>
+                                <state key="normal" title="Flash"/>
+                                <connections>
+                                    <segue destination="4Hk-RF-UY7" kind="show" id="daU-Vp-G2J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -91,6 +98,7 @@
                             <constraint firstItem="Y94-QB-rLv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="C0U-9F-0oW"/>
                             <constraint firstItem="1Ia-D0-Qam" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-130" id="F4o-9A-feN"/>
                             <constraint firstItem="DNz-Hf-c7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IM3-bK-tzy"/>
+                            <constraint firstItem="AsI-Sj-Em3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="130" id="KFC-QL-ezR"/>
                             <constraint firstItem="1Ia-D0-Qam" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="180" id="Ymj-FC-pGC"/>
                             <constraint firstItem="DNz-Hf-c7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZBa-sD-1YX"/>
                             <constraint firstItem="8fS-X3-tu2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="jJB-uD-8aC"/>
@@ -101,6 +109,7 @@
                             <constraint firstItem="iXN-vo-hAR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="v07-zE-fF5"/>
                             <constraint firstItem="iXN-vo-hAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="130" id="wTJ-fb-wRh"/>
                             <constraint firstItem="Y94-QB-rLv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-130" id="xet-Xa-DTz"/>
+                            <constraint firstItem="AsI-Sj-Em3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="240" id="y9q-O0-ian"/>
                             <constraint firstItem="JjG-qm-nmD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-130" id="zmo-kN-F61"/>
                         </constraints>
                     </view>
@@ -596,6 +605,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbJ-gp-1eP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1774" y="646"/>
+        </scene>
+        <!--FlashVC-->
+        <scene sceneID="u14-Up-ujK">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="4Hk-RF-UY7" customClass="FlashVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WIn-Vu-edn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-2K-ydp">
+                                <rect key="frame" x="20" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="1cx-Zc-BaO"/>
+                                    <constraint firstAttribute="height" constant="45" id="TMh-Rs-ZRR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="✕"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="4Hk-RF-UY7" eventType="touchUpInside" id="6KC-Vh-c1k"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StatusLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ont-wi-JmY">
+                                <rect key="frame" x="20" y="308" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyN-Mm-4Nk">
+                                <rect key="frame" x="167.5" y="364" width="79" height="168"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="130"/>
+                                <state key="normal" title="☼"/>
+                                <connections>
+                                    <action selector="flashActive:" destination="4Hk-RF-UY7" eventType="touchUpInside" id="jCd-wy-rJ7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6kt-oj-z8y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FyN-Mm-4Nk" firstAttribute="centerY" secondItem="WIn-Vu-edn" secondAttribute="centerY" id="4Oz-Cb-4Jn"/>
+                            <constraint firstItem="Hfd-2K-ydp" firstAttribute="leading" secondItem="6kt-oj-z8y" secondAttribute="leading" constant="20" id="LqM-dU-KyB"/>
+                            <constraint firstItem="6kt-oj-z8y" firstAttribute="trailing" secondItem="Ont-wi-JmY" secondAttribute="trailing" constant="20" id="OFr-TE-1ae"/>
+                            <constraint firstItem="Ont-wi-JmY" firstAttribute="leading" secondItem="6kt-oj-z8y" secondAttribute="leading" constant="20" id="bsW-Yy-blz"/>
+                            <constraint firstItem="Ont-wi-JmY" firstAttribute="centerY" secondItem="WIn-Vu-edn" secondAttribute="centerY" constant="-130" id="kPv-tf-vO4"/>
+                            <constraint firstItem="FyN-Mm-4Nk" firstAttribute="centerX" secondItem="WIn-Vu-edn" secondAttribute="centerX" id="mfe-Ss-VMI"/>
+                            <constraint firstItem="Hfd-2K-ydp" firstAttribute="top" secondItem="6kt-oj-z8y" secondAttribute="top" constant="20" id="ydE-Ab-ucN"/>
+                            <constraint firstItem="Ont-wi-JmY" firstAttribute="centerX" secondItem="WIn-Vu-edn" secondAttribute="centerX" id="yj1-fL-eer"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Sg-Ge-tIH"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="Ont-wi-JmY" id="dpN-ZK-WLH"/>
+                        <outlet property="torchButton" destination="FyN-Mm-4Nk" id="5JW-QC-bPP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKO-kG-GaO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397" y="1481"/>
         </scene>
     </scenes>
     <resources>
