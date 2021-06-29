@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CanvasTouch: UIView {
+final class CanvasTouch: UIView {
     
     override func draw(_ rect: CGRect) {
         // custom dawing

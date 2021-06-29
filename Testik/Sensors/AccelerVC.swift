@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AccelerVC: UIViewController {
+final class AccelerVC: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var dismissButton: UIButton!

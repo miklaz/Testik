@@ -73,6 +73,13 @@
                                     <segue destination="H2G-ci-fWz" kind="show" id="lWZ-2e-eHN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ia-D0-Qam">
+                                <rect key="frame" x="31" y="613" width="92" height="30"/>
+                                <state key="normal" title="Authorization"/>
+                                <connections>
+                                    <segue destination="1C6-y9-Bme" kind="show" id="Cmg-Hw-538"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -82,7 +89,9 @@
                             <constraint firstItem="yUO-qO-Zuv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bi6-y7-ISd"/>
                             <constraint firstItem="DAv-fn-bJo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BsD-Gc-kKS"/>
                             <constraint firstItem="Y94-QB-rLv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="C0U-9F-0oW"/>
+                            <constraint firstItem="1Ia-D0-Qam" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-130" id="F4o-9A-feN"/>
                             <constraint firstItem="DNz-Hf-c7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IM3-bK-tzy"/>
+                            <constraint firstItem="1Ia-D0-Qam" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="180" id="Ymj-FC-pGC"/>
                             <constraint firstItem="DNz-Hf-c7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZBa-sD-1YX"/>
                             <constraint firstItem="8fS-X3-tu2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="jJB-uD-8aC"/>
                             <constraint firstItem="yUO-qO-Zuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="130" id="kqR-31-VFo"/>
@@ -405,7 +414,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rlp-V5-pgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2577" y="646"/>
+            <point key="canvasLocation" x="3380" y="646"/>
         </scene>
         <!--DistanсeVC-->
         <scene sceneID="2ms-g5-24D">
@@ -450,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfT-fi-ecO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="646"/>
+            <point key="canvasLocation" x="2577" y="646"/>
         </scene>
         <!--Ambient Light SensorVC-->
         <scene sceneID="5yk-nm-jdx">
@@ -495,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSd-Ef-7DE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3380" y="646"/>
+            <point key="canvasLocation" x="4181" y="646"/>
         </scene>
         <!--CompassVC-->
         <scene sceneID="9jg-95-kIT">
@@ -530,6 +539,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blK-EZ-xYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="996" y="646"/>
+        </scene>
+        <!--AuthorizationVC-->
+        <scene sceneID="Z6h-Qw-qRd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="1C6-y9-Bme" customClass="AuthorizationVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L2e-Lu-1Kq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2R-Wv-1qO">
+                                <rect key="frame" x="20" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="WW4-UO-M7f"/>
+                                    <constraint firstAttribute="height" constant="45" id="dNA-UF-iA2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="✕"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="1C6-y9-Bme" eventType="touchUpInside" id="0kc-bm-X5l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StatusLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxI-dS-xkD">
+                                <rect key="frame" x="20" y="308" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdV-iM-pRa">
+                                <rect key="frame" x="142.5" y="433" width="129" height="30"/>
+                                <state key="normal" title="Start Authorization"/>
+                                <connections>
+                                    <action selector="touchID:" destination="1C6-y9-Bme" eventType="touchUpInside" id="ijT-Qw-Tjz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I9E-1u-Ax8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u2R-Wv-1qO" firstAttribute="top" secondItem="I9E-1u-Ax8" secondAttribute="top" constant="20" id="97f-fM-yrm"/>
+                            <constraint firstItem="I9E-1u-Ax8" firstAttribute="trailing" secondItem="GxI-dS-xkD" secondAttribute="trailing" constant="20" id="C7e-BO-49c"/>
+                            <constraint firstItem="GxI-dS-xkD" firstAttribute="centerY" secondItem="L2e-Lu-1Kq" secondAttribute="centerY" constant="-130" id="FLd-D7-Cc6"/>
+                            <constraint firstItem="GxI-dS-xkD" firstAttribute="centerX" secondItem="L2e-Lu-1Kq" secondAttribute="centerX" id="QVZ-ep-fgy"/>
+                            <constraint firstItem="QdV-iM-pRa" firstAttribute="centerX" secondItem="L2e-Lu-1Kq" secondAttribute="centerX" id="dao-g9-W9J"/>
+                            <constraint firstItem="u2R-Wv-1qO" firstAttribute="leading" secondItem="I9E-1u-Ax8" secondAttribute="leading" constant="20" id="maK-ac-yX9"/>
+                            <constraint firstItem="QdV-iM-pRa" firstAttribute="centerY" secondItem="L2e-Lu-1Kq" secondAttribute="centerY" id="tuZ-vq-kKx"/>
+                            <constraint firstItem="GxI-dS-xkD" firstAttribute="leading" secondItem="I9E-1u-Ax8" secondAttribute="leading" constant="20" id="tw2-zu-4Na"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4bk-j0-NB1"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="GxI-dS-xkD" id="Sfj-PQ-AhV"/>
+                        <outlet property="tapForTestButton" destination="QdV-iM-pRa" id="jOd-K0-MsX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbJ-gp-1eP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="646"/>
         </scene>
     </scenes>
     <resources>

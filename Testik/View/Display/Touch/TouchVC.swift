@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TouchVC: UIViewController {
+final class TouchVC: UIViewController {
 
     var canvas = CanvasTouch()
     

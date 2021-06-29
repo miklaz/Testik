@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AmbientLightSensorVC: UIViewController {
+final class AmbientLightSensorVC: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
     let lightStartStatus = UIScreen.main.brightness

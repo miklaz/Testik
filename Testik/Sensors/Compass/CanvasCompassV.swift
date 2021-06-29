@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CanvasV: UIView {
+final class CanvasCompassV: UIView {
     
     var halfFrameWidth: CGFloat = 0
     var fullFrameWidth: CGFloat = 0

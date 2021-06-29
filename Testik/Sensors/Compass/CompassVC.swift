@@ -7,11 +7,10 @@
 
 import UIKit
 import CoreLocation
-//import MapKit
 
-class CompassVC: UIViewController, CLLocationManagerDelegate {
+final class CompassVC: UIViewController, CLLocationManagerDelegate {
 
-    let canvasView = CanvasV()
+    let canvasView = CanvasCompassV()
     let comppassLocationManager = CLLocationManager()
     
     override func viewDidLoad() {

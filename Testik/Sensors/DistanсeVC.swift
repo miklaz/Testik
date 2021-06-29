@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DistanсeVC: UIViewController {
+final class DistanсeVC: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
     
