@@ -27,6 +27,8 @@
 		12953106267296B60041F55F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12953104267296B60041F55F /* LaunchScreen.storyboard */; };
 		12953111267296B60041F55F /* TestikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12953110267296B60041F55F /* TestikTests.swift */; };
 		1295311C267296B60041F55F /* TestikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295311B267296B60041F55F /* TestikUITests.swift */; };
+		12A93836268DB78A00E3E7EC /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A93835268DB78A00E3E7EC /* PhotoVC.swift */; };
+		12A93838268DC54100E3E7EC /* PhotoVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A93837268DC54100E3E7EC /* PhotoVC+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		12953117267296B60041F55F /* TestikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1295311B267296B60041F55F /* TestikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestikUITests.swift; sourceTree = "<group>"; };
 		1295311D267296B60041F55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12A93835268DB78A00E3E7EC /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
+		12A93837268DC54100E3E7EC /* PhotoVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoVC+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				12495D3B268B230200DD6191 /* FlashVC.swift */,
+				12A93835268DB78A00E3E7EC /* PhotoVC.swift */,
+				12A93837268DC54100E3E7EC /* PhotoVC+Ext.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -335,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				129530FE267296B40041F55F /* ViewController.swift in Sources */,
+				12A93838268DC54100E3E7EC /* PhotoVC+Ext.swift in Sources */,
 				12742AAE268861C5003D0BEE /* CanvasTouch.swift in Sources */,
 				124A0EE82675026500621D68 /* BWG_VC.swift in Sources */,
 				1289A988267F6081002070FB /* DistanсeVC.swift in Sources */,
@@ -345,6 +352,7 @@
 				12742AB1268864D9003D0BEE /* CanvasCompassV.swift in Sources */,
 				129530FA267296B40041F55F /* AppDelegate.swift in Sources */,
 				12742AB3268864FE003D0BEE /* CompassVC.swift in Sources */,
+				12A93836268DB78A00E3E7EC /* PhotoVC.swift in Sources */,
 				124A0EDE2675022C00621D68 /* RGB_VC.swift in Sources */,
 				129530FC267296B40041F55F /* SceneDelegate.swift in Sources */,
 				1259866B26875B5600EA42F0 /* AmbientLightSensorVC.swift in Sources */,
