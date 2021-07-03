@@ -29,6 +29,9 @@
 		1295311C267296B60041F55F /* TestikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295311B267296B60041F55F /* TestikUITests.swift */; };
 		12A93836268DB78A00E3E7EC /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A93835268DB78A00E3E7EC /* PhotoVC.swift */; };
 		12A93838268DC54100E3E7EC /* PhotoVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A93837268DC54100E3E7EC /* PhotoVC+Ext.swift */; };
+		12B0556F268F8B6A00C778F2 /* testSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12B0556E268F8B6A00C778F2 /* testSound2.mp3 */; };
+		12B05571268F8DCA00C778F2 /* FSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B05570268F8DCA00C778F2 /* FSpeakVC.swift */; };
+		12BFFD20268F775C009EDEFA /* MSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFFD1F268F775C009EDEFA /* MSpeakVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		1295311D267296B60041F55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A93835268DB78A00E3E7EC /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		12A93837268DC54100E3E7EC /* PhotoVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoVC+Ext.swift"; sourceTree = "<group>"; };
+		12B0556E268F8B6A00C778F2 /* testSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testSound2.mp3; sourceTree = "<group>"; };
+		12B05570268F8DCA00C778F2 /* FSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSpeakVC.swift; sourceTree = "<group>"; };
+		12BFFD1F268F775C009EDEFA /* MSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSpeakVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 				129530FD267296B40041F55F /* ViewController.swift */,
 				129530FF267296B40041F55F /* Main.storyboard */,
 				12953104267296B60041F55F /* LaunchScreen.storyboard */,
+				12BFFD1E268F7233009EDEFA /* Sound */,
 				12BA3288267F582300ED280D /* Display */,
 				1289A984267F5CE8002070FB /* Sensors */,
 				12495D3D268B230F00DD6191 /* Camera */,
@@ -199,6 +206,14 @@
 			path = TestikUITests;
 			sourceTree = "<group>";
 		};
+		12B0556D268F8B3200C778F2 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				12B0556E268F8B6A00C778F2 /* testSound2.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		12BA3288267F582300ED280D /* Display */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +223,16 @@
 				12742AAC26886129003D0BEE /* Touch */,
 			);
 			path = Display;
+			sourceTree = "<group>";
+		};
+		12BFFD1E268F7233009EDEFA /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				12BFFD1F268F775C009EDEFA /* MSpeakVC.swift */,
+				12B05570268F8DCA00C778F2 /* FSpeakVC.swift */,
+				12B0556D268F8B3200C778F2 /* Audio */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +341,7 @@
 				12953106267296B60041F55F /* LaunchScreen.storyboard in Resources */,
 				12953103267296B60041F55F /* Assets.xcassets in Resources */,
 				12953101267296B40041F55F /* Main.storyboard in Resources */,
+				12B0556F268F8B6A00C778F2 /* testSound2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,11 +369,13 @@
 				129530FE267296B40041F55F /* ViewController.swift in Sources */,
 				12A93838268DC54100E3E7EC /* PhotoVC+Ext.swift in Sources */,
 				12742AAE268861C5003D0BEE /* CanvasTouch.swift in Sources */,
+				12BFFD20268F775C009EDEFA /* MSpeakVC.swift in Sources */,
 				124A0EE82675026500621D68 /* BWG_VC.swift in Sources */,
 				1289A988267F6081002070FB /* DistanсeVC.swift in Sources */,
 				12495D3C268B230200DD6191 /* FlashVC.swift in Sources */,
 				12495D3A268AFDB800DD6191 /* AuthorizationVC.swift in Sources */,
 				1289A986267F5D83002070FB /* AccelerVC.swift in Sources */,
+				12B05571268F8DCA00C778F2 /* FSpeakVC.swift in Sources */,
 				124A0EE32675024700621D68 /* TouchVC.swift in Sources */,
 				12742AB1268864D9003D0BEE /* CanvasCompassV.swift in Sources */,
 				129530FA267296B40041F55F /* AppDelegate.swift in Sources */,
