@@ -13,7 +13,7 @@ class MSpeakVC: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var info: UILabel!
     
-    let pianoSound = URL(fileURLWithPath: Bundle.main.path(forResource: "testSound2", ofType: "mp3")!)
+    let pianoSound = URL(fileURLWithPath: Bundle.main.path(forResource: "testSound", ofType: "mp3")!)
     var audioPlayer = AVAudioPlayer()
     
     @IBAction func Play(_ sender: UIButton) {

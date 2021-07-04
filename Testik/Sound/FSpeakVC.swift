@@ -11,9 +11,8 @@ import AVFoundation
 class FSpeakVC: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
-    //@IBOutlet weak var info: UILabel!
     
-    let pianoSound = URL(fileURLWithPath: Bundle.main.path(forResource: "testSound2", ofType: "mp3")!)
+    let pianoSound = URL(fileURLWithPath: Bundle.main.path(forResource: "testSound", ofType: "mp3")!)
     var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
@@ -43,7 +42,6 @@ class FSpeakVC: UIViewController {
 
     @objc func proximityStateDidChange(notification: NSNotification) {
         if let device = notification.object as? UIDevice {
-            //print(device)
             print("\(device.name) detected!")
             let session = AVAudioSession.sharedInstance()
             do{

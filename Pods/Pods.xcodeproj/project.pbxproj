@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		037011A6A0CE91EA4299B2202405C04E /* Pods-Testik-TestikUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 099C8D9F63D80613C861DD7F7AD6CC06 /* Pods-Testik-TestikUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0380BD0B9DC193EAAB302D77A3421EDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0F649E08CD3ABEF57DBDC9945C149526 /* PRTween-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB26C4534744164E54B2B1696E3D514 /* PRTween-dummy.m */; };
+		297ECC87E58012E938D5B3E135704773 /* Pods-Testik-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E998E0346F9A20157DA7767FB88DCD63 /* Pods-Testik-dummy.m */; };
+		3822E793959508BBA9550678FE29CBF0 /* Pods-Testik-TestikUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F09004B617D0A4D5181D9375B619CCDE /* Pods-Testik-TestikUITests-dummy.m */; };
+		4266029565A2931324505745CDFD9EA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4269F736C089D3DE912AA0E4B79FFE14 /* Pods-TestikTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B951FEEA87368B47E1B97546E2EE6FDA /* Pods-TestikTests-dummy.m */; };
+		515DCC24D134C2B5A930F78B7901AB31 /* PRTweenTimingFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 68442CCEDE58D500DD3D26C8FB982053 /* PRTweenTimingFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A48F7A08D322E4390D3E9968BDB62DE /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2410B821DD8C30CC83593FED807741 /* PRTweenTimingFunctions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		60EDB7B58FCE4A541464F570AFB74779 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		640F887ED8314327BA76A36789A7FDF9 /* Pods-Testik-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D79B1FE31CBC3CD0642483274EF641D8 /* Pods-Testik-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B6B1B4E386A64E82BC010FC92769F2F /* PRTween.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EBCBDFB1F16C8F0433710CA320A347F /* PRTween.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FB3451DF09DC1D070FDCB563D4CFB96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7395D387552A1E7B1B47A9B438671501 /* PRTween-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8BDE3FA67A63929ED20433461B70D94 /* PRTween-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EC77740FD9C03BCA53C86B95DF9C881 /* Pods-TestikTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 464250D35F2B29590EFE432BAC0161BC /* Pods-TestikTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD14E2FD4ADF631060EFC41554F012E1 /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECB0FC56B972127E8AE03BE7FC766D7 /* PRTween.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FDE311B16C10E8CC2CA6AF2E22A866F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75CA230D0637BEBCCBE6371A0E6B5B6B;
+			remoteInfo = PRTween;
+		};
+		5F88CE997BFF171846DDCA27ACCFFAC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75CA230D0637BEBCCBE6371A0E6B5B6B;
+			remoteInfo = PRTween;
+		};
+		C78F20A4163F15BA1EC79726BE28E294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B580CFDD6FC2D4A59CDE09C0307FFDC6;
+			remoteInfo = "Pods-Testik";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		099C8D9F63D80613C861DD7F7AD6CC06 /* Pods-Testik-TestikUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Testik-TestikUITests-umbrella.h"; sourceTree = "<group>"; };
+		180203C2A2B1489A48F0D2AB0E2B4F57 /* Pods-Testik-TestikUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Testik-TestikUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1C251F023D49CEB40301D645EB379DF9 /* Pods-Testik-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Testik-acknowledgements.plist"; sourceTree = "<group>"; };
+		1D99450DBD65FE6978C75CCFD8B55F79 /* PRTween.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PRTween.debug.xcconfig; sourceTree = "<group>"; };
+		1DABC84D7CE7747C1FFBB1E3ABA9C4D6 /* Pods-Testik-TestikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Testik-TestikUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1EFB6A79C77AFC4B5FB59EB5B7D507C4 /* Pods-TestikTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestikTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		21C2660E94570144F1E52E16F8644E26 /* Pods-Testik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Testik.debug.xcconfig"; sourceTree = "<group>"; };
+		2C2410B821DD8C30CC83593FED807741 /* PRTweenTimingFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PRTweenTimingFunctions.m; path = lib/PRTweenTimingFunctions.m; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3DA19FD4A1DCEFE58CF8E74728917637 /* Pods-Testik-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Testik-Info.plist"; sourceTree = "<group>"; };
+		408497B4F6C86568F64D7F388672C7D6 /* Pods-Testik-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Testik-frameworks.sh"; sourceTree = "<group>"; };
+		4470DD6729CE81FA4805E3AAE613D3FD /* Pods-TestikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestikTests.debug.xcconfig"; sourceTree = "<group>"; };
+		464250D35F2B29590EFE432BAC0161BC /* Pods-TestikTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TestikTests-umbrella.h"; sourceTree = "<group>"; };
+		48634E7D04C51C11577FADB7D9C0F6F2 /* PRTween.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PRTween.modulemap; sourceTree = "<group>"; };
+		49D9E64D2F18F43082BD472F380601AE /* Pods-Testik-TestikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Testik-TestikUITests.release.xcconfig"; sourceTree = "<group>"; };
+		52BABB2F6431B7AAD5174DE9D7AB2669 /* Pods-TestikTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TestikTests.modulemap"; sourceTree = "<group>"; };
+		5EBCBDFB1F16C8F0433710CA320A347F /* PRTween.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PRTween.h; path = lib/PRTween.h; sourceTree = "<group>"; };
+		68442CCEDE58D500DD3D26C8FB982053 /* PRTweenTimingFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PRTweenTimingFunctions.h; path = lib/PRTweenTimingFunctions.h; sourceTree = "<group>"; };
+		6E87F128D99E2CC3AFB7243CE45DE0C4 /* PRTween.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRTween.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC055134C4519437E5628FCBCB9F280 /* Pods-Testik-TestikUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Testik-TestikUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6FB2632B2373BE56BB79D344B76638D0 /* Pods-Testik-TestikUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Testik-TestikUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73A6BA273AE111C8A5092919D80E8B55 /* PRTween-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PRTween-prefix.pch"; sourceTree = "<group>"; };
+		75BDB85628B9462A8B0FB66929BB69E8 /* Pods_TestikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762E04FC35F7300A681EA825474560E2 /* PRTween-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PRTween-Info.plist"; sourceTree = "<group>"; };
+		7ECB0FC56B972127E8AE03BE7FC766D7 /* PRTween.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PRTween.m; path = lib/PRTween.m; sourceTree = "<group>"; };
+		94A209881EEF899895894FAE899D4F73 /* Pods-TestikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestikTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C71004DDE2C68B5EE94A6C96EA88BE6 /* Pods-TestikTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestikTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F5FF6DB8A818ECAB5D79D27AF50610C /* Pods-Testik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Testik.release.xcconfig"; sourceTree = "<group>"; };
+		A187EF623F7331BC5F32C22208B65F5A /* Pods-TestikTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestikTests-Info.plist"; sourceTree = "<group>"; };
+		AC80762739A828F9DE80CF0FFCCC3EED /* Pods-Testik.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Testik.modulemap"; sourceTree = "<group>"; };
+		B7EF3425483679082646328B204D5D56 /* Pods_Testik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Testik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B951FEEA87368B47E1B97546E2EE6FDA /* Pods-TestikTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestikTests-dummy.m"; sourceTree = "<group>"; };
+		BD3EBD3B6C2DC4AB9750903B57A7E66A /* Pods_Testik_TestikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Testik_TestikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D569EFD4B1400F3DC28B1DCBB05EA5FB /* Pods-Testik-TestikUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Testik-TestikUITests.modulemap"; sourceTree = "<group>"; };
+		D79B1FE31CBC3CD0642483274EF641D8 /* Pods-Testik-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Testik-umbrella.h"; sourceTree = "<group>"; };
+		D7F0F74E268223A2416387DB954BBF94 /* Pods-Testik-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Testik-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E20544D5AEB1D084E36AF7AC49AD811E /* Pods-Testik-TestikUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Testik-TestikUITests-Info.plist"; sourceTree = "<group>"; };
+		E998E0346F9A20157DA7767FB88DCD63 /* Pods-Testik-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Testik-dummy.m"; sourceTree = "<group>"; };
+		EFB26C4534744164E54B2B1696E3D514 /* PRTween-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PRTween-dummy.m"; sourceTree = "<group>"; };
+		F09004B617D0A4D5181D9375B619CCDE /* Pods-Testik-TestikUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Testik-TestikUITests-dummy.m"; sourceTree = "<group>"; };
+		F8BDE3FA67A63929ED20433461B70D94 /* PRTween-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PRTween-umbrella.h"; sourceTree = "<group>"; };
+		FB5FF32CF51BF1B2CB87CDB7992B24D9 /* PRTween.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PRTween.release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0581660BDC06175CB1254C62323D6C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60EDB7B58FCE4A541464F570AFB74779 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		842846C7045082EEBCBC0F434ECAF4E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0380BD0B9DC193EAAB302D77A3421EDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		878D007AD48F2B20EEF060B7DBCE7E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB3451DF09DC1D070FDCB563D4CFB96 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E413F5D7F2174EC930358F7B94B57432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4266029565A2931324505745CDFD9EA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		215DFA29A8BA7AD0DEDE2E889AA29F14 /* PRTween */ = {
+			isa = PBXGroup;
+			children = (
+				5EBCBDFB1F16C8F0433710CA320A347F /* PRTween.h */,
+				7ECB0FC56B972127E8AE03BE7FC766D7 /* PRTween.m */,
+				68442CCEDE58D500DD3D26C8FB982053 /* PRTweenTimingFunctions.h */,
+				2C2410B821DD8C30CC83593FED807741 /* PRTweenTimingFunctions.m */,
+				B8A6D27684B66A330484B3FDD7F686B5 /* Support Files */,
+			);
+			path = PRTween;
+			sourceTree = "<group>";
+		};
+		4CB6E18DB5ABDC23163FD5C3784ED6D7 /* Pods-Testik */ = {
+			isa = PBXGroup;
+			children = (
+				AC80762739A828F9DE80CF0FFCCC3EED /* Pods-Testik.modulemap */,
+				D7F0F74E268223A2416387DB954BBF94 /* Pods-Testik-acknowledgements.markdown */,
+				1C251F023D49CEB40301D645EB379DF9 /* Pods-Testik-acknowledgements.plist */,
+				E998E0346F9A20157DA7767FB88DCD63 /* Pods-Testik-dummy.m */,
+				408497B4F6C86568F64D7F388672C7D6 /* Pods-Testik-frameworks.sh */,
+				3DA19FD4A1DCEFE58CF8E74728917637 /* Pods-Testik-Info.plist */,
+				D79B1FE31CBC3CD0642483274EF641D8 /* Pods-Testik-umbrella.h */,
+				21C2660E94570144F1E52E16F8644E26 /* Pods-Testik.debug.xcconfig */,
+				9F5FF6DB8A818ECAB5D79D27AF50610C /* Pods-Testik.release.xcconfig */,
+			);
+			name = "Pods-Testik";
+			path = "Target Support Files/Pods-Testik";
+			sourceTree = "<group>";
+		};
+		6A931EA64ACBBDCB96790E840161DF9B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CB6E18DB5ABDC23163FD5C3784ED6D7 /* Pods-Testik */,
+				AAA496E7E404E32644E0347AE4891807 /* Pods-Testik-TestikUITests */,
+				9869588C748D7AAC3AED8627007A4405 /* Pods-TestikTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		71FC4A53775500DB9E602A9FDD015211 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				215DFA29A8BA7AD0DEDE2E889AA29F14 /* PRTween */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CFFE81B5D7F29A437B804DCAE3DA786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7EF3425483679082646328B204D5D56 /* Pods_Testik.framework */,
+				BD3EBD3B6C2DC4AB9750903B57A7E66A /* Pods_Testik_TestikUITests.framework */,
+				75BDB85628B9462A8B0FB66929BB69E8 /* Pods_TestikTests.framework */,
+				6E87F128D99E2CC3AFB7243CE45DE0C4 /* PRTween.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9869588C748D7AAC3AED8627007A4405 /* Pods-TestikTests */ = {
+			isa = PBXGroup;
+			children = (
+				52BABB2F6431B7AAD5174DE9D7AB2669 /* Pods-TestikTests.modulemap */,
+				1EFB6A79C77AFC4B5FB59EB5B7D507C4 /* Pods-TestikTests-acknowledgements.markdown */,
+				9C71004DDE2C68B5EE94A6C96EA88BE6 /* Pods-TestikTests-acknowledgements.plist */,
+				B951FEEA87368B47E1B97546E2EE6FDA /* Pods-TestikTests-dummy.m */,
+				A187EF623F7331BC5F32C22208B65F5A /* Pods-TestikTests-Info.plist */,
+				464250D35F2B29590EFE432BAC0161BC /* Pods-TestikTests-umbrella.h */,
+				4470DD6729CE81FA4805E3AAE613D3FD /* Pods-TestikTests.debug.xcconfig */,
+				94A209881EEF899895894FAE899D4F73 /* Pods-TestikTests.release.xcconfig */,
+			);
+			name = "Pods-TestikTests";
+			path = "Target Support Files/Pods-TestikTests";
+			sourceTree = "<group>";
+		};
+		AAA496E7E404E32644E0347AE4891807 /* Pods-Testik-TestikUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D569EFD4B1400F3DC28B1DCBB05EA5FB /* Pods-Testik-TestikUITests.modulemap */,
+				6EC055134C4519437E5628FCBCB9F280 /* Pods-Testik-TestikUITests-acknowledgements.markdown */,
+				6FB2632B2373BE56BB79D344B76638D0 /* Pods-Testik-TestikUITests-acknowledgements.plist */,
+				F09004B617D0A4D5181D9375B619CCDE /* Pods-Testik-TestikUITests-dummy.m */,
+				180203C2A2B1489A48F0D2AB0E2B4F57 /* Pods-Testik-TestikUITests-frameworks.sh */,
+				E20544D5AEB1D084E36AF7AC49AD811E /* Pods-Testik-TestikUITests-Info.plist */,
+				099C8D9F63D80613C861DD7F7AD6CC06 /* Pods-Testik-TestikUITests-umbrella.h */,
+				1DABC84D7CE7747C1FFBB1E3ABA9C4D6 /* Pods-Testik-TestikUITests.debug.xcconfig */,
+				49D9E64D2F18F43082BD472F380601AE /* Pods-Testik-TestikUITests.release.xcconfig */,
+			);
+			name = "Pods-Testik-TestikUITests";
+			path = "Target Support Files/Pods-Testik-TestikUITests";
+			sourceTree = "<group>";
+		};
+		B8A6D27684B66A330484B3FDD7F686B5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				48634E7D04C51C11577FADB7D9C0F6F2 /* PRTween.modulemap */,
+				EFB26C4534744164E54B2B1696E3D514 /* PRTween-dummy.m */,
+				762E04FC35F7300A681EA825474560E2 /* PRTween-Info.plist */,
+				73A6BA273AE111C8A5092919D80E8B55 /* PRTween-prefix.pch */,
+				F8BDE3FA67A63929ED20433461B70D94 /* PRTween-umbrella.h */,
+				1D99450DBD65FE6978C75CCFD8B55F79 /* PRTween.debug.xcconfig */,
+				FB5FF32CF51BF1B2CB87CDB7992B24D9 /* PRTween.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PRTween";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				71FC4A53775500DB9E602A9FDD015211 /* Pods */,
+				8CFFE81B5D7F29A437B804DCAE3DA786 /* Products */,
+				6A931EA64ACBBDCB96790E840161DF9B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		07B29382C163FF33178812840D31E096 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037011A6A0CE91EA4299B2202405C04E /* Pods-Testik-TestikUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A40447A1D409678AEA983222F68B08A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640F887ED8314327BA76A36789A7FDF9 /* Pods-Testik-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76715DA67AFC47ED24B5E2B9AF248662 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EC77740FD9C03BCA53C86B95DF9C881 /* Pods-TestikTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA3091884A6920181E9111C6F5F684C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7395D387552A1E7B1B47A9B438671501 /* PRTween-umbrella.h in Headers */,
+				6B6B1B4E386A64E82BC010FC92769F2F /* PRTween.h in Headers */,
+				515DCC24D134C2B5A930F78B7901AB31 /* PRTweenTimingFunctions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		75CA230D0637BEBCCBE6371A0E6B5B6B /* PRTween */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE272D65874023847775F4CAC1AA2021 /* Build configuration list for PBXNativeTarget "PRTween" */;
+			buildPhases = (
+				FAA3091884A6920181E9111C6F5F684C /* Headers */,
+				FC91B5353510196ADDFDD1386921094D /* Sources */,
+				0581660BDC06175CB1254C62323D6C13 /* Frameworks */,
+				638F74D9CD34F8AC1AE956DF606EE4E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PRTween;
+			productName = PRTween;
+			productReference = 6E87F128D99E2CC3AFB7243CE45DE0C4 /* PRTween.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B580CFDD6FC2D4A59CDE09C0307FFDC6 /* Pods-Testik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B64D26421ED8DD0BBD987575A87C23 /* Build configuration list for PBXNativeTarget "Pods-Testik" */;
+			buildPhases = (
+				1A40447A1D409678AEA983222F68B08A /* Headers */,
+				ED3F43E6AD5F4E8E728BA955E7E65485 /* Sources */,
+				842846C7045082EEBCBC0F434ECAF4E0 /* Frameworks */,
+				A99A6A43E802050E6B64A0310C752F3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94A0D2987EF24B820BAFB4C75229A255 /* PBXTargetDependency */,
+			);
+			name = "Pods-Testik";
+			productName = "Pods-Testik";
+			productReference = B7EF3425483679082646328B204D5D56 /* Pods_Testik.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC213445DE3D0652EC5F2E197BE3C745 /* Pods-TestikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 050650BADBBA11A3A2490B2F24E3C004 /* Build configuration list for PBXNativeTarget "Pods-TestikTests" */;
+			buildPhases = (
+				76715DA67AFC47ED24B5E2B9AF248662 /* Headers */,
+				7D62301A47B297A6BDF2A0ABE3AB5A65 /* Sources */,
+				E413F5D7F2174EC930358F7B94B57432 /* Frameworks */,
+				30B09270A558A9D1BE20EF5FAE230FB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87FD3A64676B8A031FB378DFF6BDC650 /* PBXTargetDependency */,
+			);
+			name = "Pods-TestikTests";
+			productName = "Pods-TestikTests";
+			productReference = 75BDB85628B9462A8B0FB66929BB69E8 /* Pods_TestikTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6B2E7A3B360316612D14E551D2ABCED /* Pods-Testik-TestikUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A44F18F6DC6F212E9730CAF34A784E56 /* Build configuration list for PBXNativeTarget "Pods-Testik-TestikUITests" */;
+			buildPhases = (
+				07B29382C163FF33178812840D31E096 /* Headers */,
+				57375F68F8368D74AE53EF7431176F9E /* Sources */,
+				878D007AD48F2B20EEF060B7DBCE7E74 /* Frameworks */,
+				B8FDA8AEF506CEDBDC29352F26BDC602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AB0A59AE5C081572E40DA4E05CC47A6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Testik-TestikUITests";
+			productName = "Pods-Testik-TestikUITests";
+			productReference = BD3EBD3B6C2DC4AB9750903B57A7E66A /* Pods_Testik_TestikUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8CFFE81B5D7F29A437B804DCAE3DA786 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B580CFDD6FC2D4A59CDE09C0307FFDC6 /* Pods-Testik */,
+				F6B2E7A3B360316612D14E551D2ABCED /* Pods-Testik-TestikUITests */,
+				DC213445DE3D0652EC5F2E197BE3C745 /* Pods-TestikTests */,
+				75CA230D0637BEBCCBE6371A0E6B5B6B /* PRTween */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30B09270A558A9D1BE20EF5FAE230FB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638F74D9CD34F8AC1AE956DF606EE4E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99A6A43E802050E6B64A0310C752F3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FDA8AEF506CEDBDC29352F26BDC602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57375F68F8368D74AE53EF7431176F9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3822E793959508BBA9550678FE29CBF0 /* Pods-Testik-TestikUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D62301A47B297A6BDF2A0ABE3AB5A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4269F736C089D3DE912AA0E4B79FFE14 /* Pods-TestikTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3F43E6AD5F4E8E728BA955E7E65485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297ECC87E58012E938D5B3E135704773 /* Pods-Testik-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC91B5353510196ADDFDD1386921094D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F649E08CD3ABEF57DBDC9945C149526 /* PRTween-dummy.m in Sources */,
+				FD14E2FD4ADF631060EFC41554F012E1 /* PRTween.m in Sources */,
+				5A48F7A08D322E4390D3E9968BDB62DE /* PRTweenTimingFunctions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AB0A59AE5C081572E40DA4E05CC47A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PRTween;
+			target = 75CA230D0637BEBCCBE6371A0E6B5B6B /* PRTween */;
+			targetProxy = 5F88CE997BFF171846DDCA27ACCFFAC1 /* PBXContainerItemProxy */;
+		};
+		87FD3A64676B8A031FB378DFF6BDC650 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Testik";
+			target = B580CFDD6FC2D4A59CDE09C0307FFDC6 /* Pods-Testik */;
+			targetProxy = C78F20A4163F15BA1EC79726BE28E294 /* PBXContainerItemProxy */;
+		};
+		94A0D2987EF24B820BAFB4C75229A255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PRTween;
+			target = 75CA230D0637BEBCCBE6371A0E6B5B6B /* PRTween */;
+			targetProxy = 3FDE311B16C10E8CC2CA6AF2E22A866F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1DC9D748135F4F4F7A9AEC77B4B7074D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A209881EEF899895894FAE899D4F73 /* Pods-TestikTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestikTests/Pods-TestikTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestikTests/Pods-TestikTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		410D49BD36E83A4C711479F6AC38DED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB5FF32CF51BF1B2CB87CDB7992B24D9 /* PRTween.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PRTween/PRTween-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PRTween/PRTween-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PRTween/PRTween.modulemap";
+				PRODUCT_MODULE_NAME = PRTween;
+				PRODUCT_NAME = PRTween;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		41DC0E099EBC031CEA341AD5A8B58AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D9E64D2F18F43082BD472F380601AE /* Pods-Testik-TestikUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Testik-TestikUITests/Pods-Testik-TestikUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Testik-TestikUITests/Pods-Testik-TestikUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		85D814EB0AE181332F401B70B9689EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4470DD6729CE81FA4805E3AAE613D3FD /* Pods-TestikTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestikTests/Pods-TestikTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestikTests/Pods-TestikTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		958403D710585CD4949199CF6E7A9FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F5FF6DB8A818ECAB5D79D27AF50610C /* Pods-Testik.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Testik/Pods-Testik-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Testik/Pods-Testik.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		99C6C87D47673966EEA82F82DD764EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D99450DBD65FE6978C75CCFD8B55F79 /* PRTween.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PRTween/PRTween-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PRTween/PRTween-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PRTween/PRTween.modulemap";
+				PRODUCT_MODULE_NAME = PRTween;
+				PRODUCT_NAME = PRTween;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A782A7A7A0AF7F9F8CD1CEA8B45EB34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DABC84D7CE7747C1FFBB1E3ABA9C4D6 /* Pods-Testik-TestikUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Testik-TestikUITests/Pods-Testik-TestikUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Testik-TestikUITests/Pods-Testik-TestikUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4DB51CB4891CBDA6E117DE09744C2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C2660E94570144F1E52E16F8644E26 /* Pods-Testik.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Testik/Pods-Testik-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Testik/Pods-Testik.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		050650BADBBA11A3A2490B2F24E3C004 /* Build configuration list for PBXNativeTarget "Pods-TestikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D814EB0AE181332F401B70B9689EF6 /* Debug */,
+				1DC9D748135F4F4F7A9AEC77B4B7074D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A44F18F6DC6F212E9730CAF34A784E56 /* Build configuration list for PBXNativeTarget "Pods-Testik-TestikUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A782A7A7A0AF7F9F8CD1CEA8B45EB34F /* Debug */,
+				41DC0E099EBC031CEA341AD5A8B58AF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B64D26421ED8DD0BBD987575A87C23 /* Build configuration list for PBXNativeTarget "Pods-Testik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DB51CB4891CBDA6E117DE09744C2CC /* Debug */,
+				958403D710585CD4949199CF6E7A9FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE272D65874023847775F4CAC1AA2021 /* Build configuration list for PBXNativeTarget "PRTween" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99C6C87D47673966EEA82F82DD764EDA /* Debug */,
+				410D49BD36E83A4C711479F6AC38DED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

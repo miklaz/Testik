@@ -3,11 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1211B40F267B495E00B2F9A2 /* Contrast&Gamma_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1211B40E267B495E00B2F9A2 /* Contrast&Gamma_VC.swift */; };
+		122EF0972690A2E100888723 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF0962690A2E100888723 /* Extensions.swift */; };
+		122EF09A2690A33100888723 /* AudioVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF0992690A33100888723 /* AudioVisualizerView.swift */; };
+		122EF09D2690A39100888723 /* RecordingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF09C2690A39100888723 /* RecordingsVC.swift */; };
+		122EF09F2690A3F000888723 /* MicrophoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF09E2690A3F000888723 /* MicrophoneVC.swift */; };
+		122EF0A22690A43C00888723 /* RecorderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF0A12690A43C00888723 /* RecorderVC.swift */; };
+		122EF0A42690A48F00888723 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF0A32690A48F00888723 /* RecordButton.swift */; };
+		122EF0A62690A4C000888723 /* RecordButtonKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF0A52690A4C000888723 /* RecordButtonKit.swift */; };
+		122EF0AB2690A73C00888723 /* StartRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 122EF0A92690A73B00888723 /* StartRecording.aiff */; };
+		122EF0AC2690A73C00888723 /* StopRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 122EF0AA2690A73C00888723 /* StopRecording.aiff */; };
 		12495D3A268AFDB800DD6191 /* AuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12495D39268AFDB800DD6191 /* AuthorizationVC.swift */; };
 		12495D3C268B230200DD6191 /* FlashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12495D3B268B230200DD6191 /* FlashVC.swift */; };
 		124A0EDE2675022C00621D68 /* RGB_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EDD2675022C00621D68 /* RGB_VC.swift */; };
@@ -29,9 +38,12 @@
 		1295311C267296B60041F55F /* TestikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295311B267296B60041F55F /* TestikUITests.swift */; };
 		12A93836268DB78A00E3E7EC /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A93835268DB78A00E3E7EC /* PhotoVC.swift */; };
 		12A93838268DC54100E3E7EC /* PhotoVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A93837268DC54100E3E7EC /* PhotoVC+Ext.swift */; };
-		12B0556F268F8B6A00C778F2 /* testSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12B0556E268F8B6A00C778F2 /* testSound2.mp3 */; };
+		12B0556F268F8B6A00C778F2 /* testSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12B0556E268F8B6A00C778F2 /* testSound.mp3 */; };
 		12B05571268F8DCA00C778F2 /* FSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B05570268F8DCA00C778F2 /* FSpeakVC.swift */; };
 		12BFFD20268F775C009EDEFA /* MSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFFD1F268F775C009EDEFA /* MSpeakVC.swift */; };
+		8A9BD86054FE3101ED4FB4ED /* Pods_Testik_TestikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22A903EF22D9BCFE6F5A7F9 /* Pods_Testik_TestikUITests.framework */; };
+		BB3FE5C4A7DBA71A173EB613 /* Pods_Testik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA4F2F8739EDB85A42D2F9C /* Pods_Testik.framework */; };
+		FC297C36B92A92E393A7AECC /* Pods_TestikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA17552F5248380CD895755 /* Pods_TestikTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +65,16 @@
 
 /* Begin PBXFileReference section */
 		1211B40E267B495E00B2F9A2 /* Contrast&Gamma_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contrast&Gamma_VC.swift"; sourceTree = "<group>"; };
+		122EF0962690A2E100888723 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		122EF0992690A33100888723 /* AudioVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerView.swift; sourceTree = "<group>"; };
+		122EF09C2690A39100888723 /* RecordingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsVC.swift; sourceTree = "<group>"; };
+		122EF09E2690A3F000888723 /* MicrophoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneVC.swift; sourceTree = "<group>"; };
+		122EF0A12690A43C00888723 /* RecorderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderVC.swift; sourceTree = "<group>"; };
+		122EF0A32690A48F00888723 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		122EF0A52690A4C000888723 /* RecordButtonKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonKit.swift; sourceTree = "<group>"; };
+		122EF0A82690A6FE00888723 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		122EF0A92690A73B00888723 /* StartRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StartRecording.aiff; sourceTree = "<group>"; };
+		122EF0AA2690A73C00888723 /* StopRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StopRecording.aiff; sourceTree = "<group>"; };
 		12495D39268AFDB800DD6191 /* AuthorizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationVC.swift; sourceTree = "<group>"; };
 		12495D3B268B230200DD6191 /* FlashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashVC.swift; sourceTree = "<group>"; };
 		124A0EDD2675022C00621D68 /* RGB_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB_VC.swift; sourceTree = "<group>"; };
@@ -80,9 +102,18 @@
 		1295311D267296B60041F55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A93835268DB78A00E3E7EC /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		12A93837268DC54100E3E7EC /* PhotoVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoVC+Ext.swift"; sourceTree = "<group>"; };
-		12B0556E268F8B6A00C778F2 /* testSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testSound2.mp3; sourceTree = "<group>"; };
+		12B0556E268F8B6A00C778F2 /* testSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testSound.mp3; sourceTree = "<group>"; };
 		12B05570268F8DCA00C778F2 /* FSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSpeakVC.swift; sourceTree = "<group>"; };
 		12BFFD1F268F775C009EDEFA /* MSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSpeakVC.swift; sourceTree = "<group>"; };
+		1BDA99E3F255445D3127D7EF /* Pods-Testik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testik.release.xcconfig"; path = "Target Support Files/Pods-Testik/Pods-Testik.release.xcconfig"; sourceTree = "<group>"; };
+		3FA4F2F8739EDB85A42D2F9C /* Pods_Testik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Testik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F4563BD6F2F86907E6E88D /* Pods-TestikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestikTests.release.xcconfig"; path = "Target Support Files/Pods-TestikTests/Pods-TestikTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E1852913B6264D1D5971A00 /* Pods-Testik-TestikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testik-TestikUITests.debug.xcconfig"; path = "Target Support Files/Pods-Testik-TestikUITests/Pods-Testik-TestikUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		64C2C77C63C03B4C3EE8F63F /* Pods-Testik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testik.debug.xcconfig"; path = "Target Support Files/Pods-Testik/Pods-Testik.debug.xcconfig"; sourceTree = "<group>"; };
+		6EB7630F4597E2A081F0A26E /* Pods-TestikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestikTests.debug.xcconfig"; path = "Target Support Files/Pods-TestikTests/Pods-TestikTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B22A903EF22D9BCFE6F5A7F9 /* Pods_Testik_TestikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Testik_TestikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA17552F5248380CD895755 /* Pods_TestikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9341DE5CD5B72C84949D73E /* Pods-Testik-TestikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testik-TestikUITests.release.xcconfig"; path = "Target Support Files/Pods-Testik-TestikUITests/Pods-Testik-TestikUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB3FE5C4A7DBA71A173EB613 /* Pods_Testik.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC297C36B92A92E393A7AECC /* Pods_TestikTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +137,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9BD86054FE3101ED4FB4ED /* Pods_Testik_TestikUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122EF0932690991A00888723 /* Microphone */ = {
+			isa = PBXGroup;
+			children = (
+				122EF09B2690A36E00888723 /* Controllers */,
+				122EF0982690A30600888723 /* Custom Views */,
+				122EF0952690A2AC00888723 /* Extensions */,
+				122EF0A82690A6FE00888723 /* Bridging-Header.h */,
+			);
+			path = Microphone;
+			sourceTree = "<group>";
+		};
+		122EF09426909AD800888723 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12953102267296B60041F55F /* Assets.xcassets */,
+				12B0556D268F8B3200C778F2 /* Audio */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		122EF0952690A2AC00888723 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				122EF0962690A2E100888723 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		122EF0982690A30600888723 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				122EF0992690A33100888723 /* AudioVisualizerView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		122EF09B2690A36E00888723 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				122EF0A02690A41500888723 /* RecorderView */,
+				122EF09C2690A39100888723 /* RecordingsVC.swift */,
+				122EF09E2690A3F000888723 /* MicrophoneVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		122EF0A02690A41500888723 /* RecorderView */ = {
+			isa = PBXGroup;
+			children = (
+				122EF0A52690A4C000888723 /* RecordButtonKit.swift */,
+				122EF0A32690A48F00888723 /* RecordButton.swift */,
+				122EF0A12690A43C00888723 /* RecorderVC.swift */,
+			);
+			path = RecorderView;
+			sourceTree = "<group>";
+		};
 		12495D3D268B230F00DD6191 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +247,8 @@
 				1295310F267296B60041F55F /* TestikTests */,
 				1295311A267296B60041F55F /* TestikUITests */,
 				129530F7267296B40041F55F /* Products */,
+				E47F2370D695B88C995F773E /* Pods */,
+				4CE02AD1567F8EFB173C79A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,7 +274,7 @@
 				12BA3288267F582300ED280D /* Display */,
 				1289A984267F5CE8002070FB /* Sensors */,
 				12495D3D268B230F00DD6191 /* Camera */,
-				12953102267296B60041F55F /* Assets.xcassets */,
+				122EF09426909AD800888723 /* Resources */,
 				12953107267296B60041F55F /* Info.plist */,
 			);
 			path = Testik;
@@ -209,7 +301,9 @@
 		12B0556D268F8B3200C778F2 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				12B0556E268F8B6A00C778F2 /* testSound2.mp3 */,
+				122EF0A92690A73B00888723 /* StartRecording.aiff */,
+				122EF0AA2690A73C00888723 /* StopRecording.aiff */,
+				12B0556E268F8B6A00C778F2 /* testSound.mp3 */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -230,9 +324,32 @@
 			children = (
 				12BFFD1F268F775C009EDEFA /* MSpeakVC.swift */,
 				12B05570268F8DCA00C778F2 /* FSpeakVC.swift */,
-				12B0556D268F8B3200C778F2 /* Audio */,
+				122EF0932690991A00888723 /* Microphone */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		4CE02AD1567F8EFB173C79A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FA4F2F8739EDB85A42D2F9C /* Pods_Testik.framework */,
+				B22A903EF22D9BCFE6F5A7F9 /* Pods_Testik_TestikUITests.framework */,
+				DDA17552F5248380CD895755 /* Pods_TestikTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E47F2370D695B88C995F773E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64C2C77C63C03B4C3EE8F63F /* Pods-Testik.debug.xcconfig */,
+				1BDA99E3F255445D3127D7EF /* Pods-Testik.release.xcconfig */,
+				5E1852913B6264D1D5971A00 /* Pods-Testik-TestikUITests.debug.xcconfig */,
+				E9341DE5CD5B72C84949D73E /* Pods-Testik-TestikUITests.release.xcconfig */,
+				6EB7630F4597E2A081F0A26E /* Pods-TestikTests.debug.xcconfig */,
+				55F4563BD6F2F86907E6E88D /* Pods-TestikTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,9 +359,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12953120267296B60041F55F /* Build configuration list for PBXNativeTarget "Testik" */;
 			buildPhases = (
+				B16D1F008CFD8641D3ACF0EE /* [CP] Check Pods Manifest.lock */,
 				129530F2267296B40041F55F /* Sources */,
 				129530F3267296B40041F55F /* Frameworks */,
 				129530F4267296B40041F55F /* Resources */,
+				3FA1F797A2E7F65A5FF9A82A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +378,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12953123267296B60041F55F /* Build configuration list for PBXNativeTarget "TestikTests" */;
 			buildPhases = (
+				32AB7A9E515E596CC5FFDE2D /* [CP] Check Pods Manifest.lock */,
 				12953108267296B60041F55F /* Sources */,
 				12953109267296B60041F55F /* Frameworks */,
 				1295310A267296B60041F55F /* Resources */,
@@ -277,9 +397,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12953126267296B60041F55F /* Build configuration list for PBXNativeTarget "TestikUITests" */;
 			buildPhases = (
+				147E8E972C03CA0318AD31E3 /* [CP] Check Pods Manifest.lock */,
 				12953113267296B60041F55F /* Sources */,
 				12953114267296B60041F55F /* Frameworks */,
 				12953115267296B60041F55F /* Resources */,
+				D530CE874F1E34E7AAD87F55 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,9 +461,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				12953106267296B60041F55F /* LaunchScreen.storyboard in Resources */,
+				122EF0AC2690A73C00888723 /* StopRecording.aiff in Resources */,
 				12953103267296B60041F55F /* Assets.xcassets in Resources */,
+				122EF0AB2690A73C00888723 /* StartRecording.aiff in Resources */,
 				12953101267296B40041F55F /* Main.storyboard in Resources */,
-				12B0556F268F8B6A00C778F2 /* testSound2.mp3 in Resources */,
+				12B0556F268F8B6A00C778F2 /* testSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,26 +485,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		147E8E972C03CA0318AD31E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Testik-TestikUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32AB7A9E515E596CC5FFDE2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestikTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA1F797A2E7F65A5FF9A82A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Testik/Pods-Testik-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Testik/Pods-Testik-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Testik/Pods-Testik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B16D1F008CFD8641D3ACF0EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Testik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D530CE874F1E34E7AAD87F55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Testik-TestikUITests/Pods-Testik-TestikUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Testik-TestikUITests/Pods-Testik-TestikUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Testik-TestikUITests/Pods-Testik-TestikUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		129530F2267296B40041F55F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				129530FE267296B40041F55F /* ViewController.swift in Sources */,
+				122EF09F2690A3F000888723 /* MicrophoneVC.swift in Sources */,
 				12A93838268DC54100E3E7EC /* PhotoVC+Ext.swift in Sources */,
 				12742AAE268861C5003D0BEE /* CanvasTouch.swift in Sources */,
+				122EF0A42690A48F00888723 /* RecordButton.swift in Sources */,
+				122EF0A22690A43C00888723 /* RecorderVC.swift in Sources */,
 				12BFFD20268F775C009EDEFA /* MSpeakVC.swift in Sources */,
+				122EF0A62690A4C000888723 /* RecordButtonKit.swift in Sources */,
 				124A0EE82675026500621D68 /* BWG_VC.swift in Sources */,
 				1289A988267F6081002070FB /* DistanсeVC.swift in Sources */,
 				12495D3C268B230200DD6191 /* FlashVC.swift in Sources */,
 				12495D3A268AFDB800DD6191 /* AuthorizationVC.swift in Sources */,
 				1289A986267F5D83002070FB /* AccelerVC.swift in Sources */,
+				122EF09A2690A33100888723 /* AudioVisualizerView.swift in Sources */,
 				12B05571268F8DCA00C778F2 /* FSpeakVC.swift in Sources */,
 				124A0EE32675024700621D68 /* TouchVC.swift in Sources */,
 				12742AB1268864D9003D0BEE /* CanvasCompassV.swift in Sources */,
 				129530FA267296B40041F55F /* AppDelegate.swift in Sources */,
+				122EF09D2690A39100888723 /* RecordingsVC.swift in Sources */,
 				12742AB3268864FE003D0BEE /* CompassVC.swift in Sources */,
 				12A93836268DB78A00E3E7EC /* PhotoVC.swift in Sources */,
+				122EF0972690A2E100888723 /* Extensions.swift in Sources */,
 				124A0EDE2675022C00621D68 /* RGB_VC.swift in Sources */,
 				129530FC267296B40041F55F /* SceneDelegate.swift in Sources */,
 				1259866B26875B5600EA42F0 /* AmbientLightSensorVC.swift in Sources */,
@@ -557,6 +791,7 @@
 		};
 		12953121267296B60041F55F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C2C77C63C03B4C3EE8F63F /* Pods-Testik.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -570,6 +805,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.miklaz.Testik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Testik/Sound/Microphone/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -577,6 +813,7 @@
 		};
 		12953122267296B60041F55F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDA99E3F255445D3127D7EF /* Pods-Testik.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -590,6 +827,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.miklaz.Testik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Testik/Sound/Microphone/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -597,6 +835,7 @@
 		};
 		12953124267296B60041F55F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB7630F4597E2A081F0A26E /* Pods-TestikTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -619,6 +858,7 @@
 		};
 		12953125267296B60041F55F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F4563BD6F2F86907E6E88D /* Pods-TestikTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -641,6 +881,7 @@
 		};
 		12953127267296B60041F55F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1852913B6264D1D5971A00 /* Pods-Testik-TestikUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -661,6 +902,7 @@
 		};
 		12953128267296B60041F55F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9341DE5CD5B72C84949D73E /* Pods-Testik-TestikUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

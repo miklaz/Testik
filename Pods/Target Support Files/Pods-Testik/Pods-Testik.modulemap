@@ -1,0 +1,6 @@
+framework module Pods_Testik {
+  umbrella header "Pods-Testik-umbrella.h"
+
+  export *
+  module * { export * }
+}
