@@ -28,6 +28,7 @@
 		12742AB3268864FE003D0BEE /* CompassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12742AB2268864FE003D0BEE /* CompassVC.swift */; };
 		1289A986267F5D83002070FB /* AccelerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1289A985267F5D83002070FB /* AccelerVC.swift */; };
 		1289A988267F6081002070FB /* DistanсeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1289A987267F6081002070FB /* DistanсeVC.swift */; };
+		1292E90B2692FCCC00418C4A /* HeadphonesSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1292E90A2692FCCC00418C4A /* HeadphonesSpeakVC.swift */; };
 		129530FA267296B40041F55F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530F9267296B40041F55F /* AppDelegate.swift */; };
 		129530FC267296B40041F55F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530FB267296B40041F55F /* SceneDelegate.swift */; };
 		129530FE267296B40041F55F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530FD267296B40041F55F /* ViewController.swift */; };
@@ -38,9 +39,10 @@
 		1295311C267296B60041F55F /* TestikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295311B267296B60041F55F /* TestikUITests.swift */; };
 		12A93836268DB78A00E3E7EC /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A93835268DB78A00E3E7EC /* PhotoVC.swift */; };
 		12A93838268DC54100E3E7EC /* PhotoVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A93837268DC54100E3E7EC /* PhotoVC+Ext.swift */; };
+		12A983D82694784D00C35739 /* fakeSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12A983D72694784D00C35739 /* fakeSound2.mp3 */; };
 		12B0556F268F8B6A00C778F2 /* testSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12B0556E268F8B6A00C778F2 /* testSound.mp3 */; };
-		12B05571268F8DCA00C778F2 /* FSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B05570268F8DCA00C778F2 /* FSpeakVC.swift */; };
-		12BFFD20268F775C009EDEFA /* MSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFFD1F268F775C009EDEFA /* MSpeakVC.swift */; };
+		12B05571268F8DCA00C778F2 /* FrontSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B05570268F8DCA00C778F2 /* FrontSpeakVC.swift */; };
+		12BFFD20268F775C009EDEFA /* MainSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFFD1F268F775C009EDEFA /* MainSpeakVC.swift */; };
 		8A9BD86054FE3101ED4FB4ED /* Pods_Testik_TestikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22A903EF22D9BCFE6F5A7F9 /* Pods_Testik_TestikUITests.framework */; };
 		BB3FE5C4A7DBA71A173EB613 /* Pods_Testik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA4F2F8739EDB85A42D2F9C /* Pods_Testik.framework */; };
 		FC297C36B92A92E393A7AECC /* Pods_TestikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA17552F5248380CD895755 /* Pods_TestikTests.framework */; };
@@ -86,6 +88,8 @@
 		12742AB2268864FE003D0BEE /* CompassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassVC.swift; sourceTree = "<group>"; };
 		1289A985267F5D83002070FB /* AccelerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerVC.swift; sourceTree = "<group>"; };
 		1289A987267F6081002070FB /* DistanсeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DistanсeVC.swift"; sourceTree = "<group>"; };
+		1292E90A2692FCCC00418C4A /* HeadphonesSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphonesSpeakVC.swift; sourceTree = "<group>"; };
+		1292E90C2694752100418C4A /* fakeSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fakeSound.m4a; sourceTree = "<group>"; };
 		129530F6267296B40041F55F /* Testik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129530F9267296B40041F55F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		129530FB267296B40041F55F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,9 +106,10 @@
 		1295311D267296B60041F55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A93835268DB78A00E3E7EC /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		12A93837268DC54100E3E7EC /* PhotoVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoVC+Ext.swift"; sourceTree = "<group>"; };
+		12A983D72694784D00C35739 /* fakeSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fakeSound2.mp3; sourceTree = "<group>"; };
 		12B0556E268F8B6A00C778F2 /* testSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testSound.mp3; sourceTree = "<group>"; };
-		12B05570268F8DCA00C778F2 /* FSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSpeakVC.swift; sourceTree = "<group>"; };
-		12BFFD1F268F775C009EDEFA /* MSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSpeakVC.swift; sourceTree = "<group>"; };
+		12B05570268F8DCA00C778F2 /* FrontSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontSpeakVC.swift; sourceTree = "<group>"; };
+		12BFFD1F268F775C009EDEFA /* MainSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSpeakVC.swift; sourceTree = "<group>"; };
 		1BDA99E3F255445D3127D7EF /* Pods-Testik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testik.release.xcconfig"; path = "Target Support Files/Pods-Testik/Pods-Testik.release.xcconfig"; sourceTree = "<group>"; };
 		3FA4F2F8739EDB85A42D2F9C /* Pods_Testik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Testik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F4563BD6F2F86907E6E88D /* Pods-TestikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestikTests.release.xcconfig"; path = "Target Support Files/Pods-TestikTests/Pods-TestikTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -304,6 +309,8 @@
 				122EF0A92690A73B00888723 /* StartRecording.aiff */,
 				122EF0AA2690A73C00888723 /* StopRecording.aiff */,
 				12B0556E268F8B6A00C778F2 /* testSound.mp3 */,
+				1292E90C2694752100418C4A /* fakeSound.m4a */,
+				12A983D72694784D00C35739 /* fakeSound2.mp3 */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -322,8 +329,9 @@
 		12BFFD1E268F7233009EDEFA /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				12BFFD1F268F775C009EDEFA /* MSpeakVC.swift */,
-				12B05570268F8DCA00C778F2 /* FSpeakVC.swift */,
+				12BFFD1F268F775C009EDEFA /* MainSpeakVC.swift */,
+				12B05570268F8DCA00C778F2 /* FrontSpeakVC.swift */,
+				1292E90A2692FCCC00418C4A /* HeadphonesSpeakVC.swift */,
 				122EF0932690991A00888723 /* Microphone */,
 			);
 			path = Sound;
@@ -464,6 +472,7 @@
 				122EF0AC2690A73C00888723 /* StopRecording.aiff in Resources */,
 				12953103267296B60041F55F /* Assets.xcassets in Resources */,
 				122EF0AB2690A73C00888723 /* StartRecording.aiff in Resources */,
+				12A983D82694784D00C35739 /* fakeSound2.mp3 in Resources */,
 				12953101267296B40041F55F /* Main.storyboard in Resources */,
 				12B0556F268F8B6A00C778F2 /* testSound.mp3 in Resources */,
 			);
@@ -595,11 +604,12 @@
 			files = (
 				129530FE267296B40041F55F /* ViewController.swift in Sources */,
 				122EF09F2690A3F000888723 /* MicrophoneVC.swift in Sources */,
+				1292E90B2692FCCC00418C4A /* HeadphonesSpeakVC.swift in Sources */,
 				12A93838268DC54100E3E7EC /* PhotoVC+Ext.swift in Sources */,
 				12742AAE268861C5003D0BEE /* CanvasTouch.swift in Sources */,
 				122EF0A42690A48F00888723 /* RecordButton.swift in Sources */,
 				122EF0A22690A43C00888723 /* RecorderVC.swift in Sources */,
-				12BFFD20268F775C009EDEFA /* MSpeakVC.swift in Sources */,
+				12BFFD20268F775C009EDEFA /* MainSpeakVC.swift in Sources */,
 				122EF0A62690A4C000888723 /* RecordButtonKit.swift in Sources */,
 				124A0EE82675026500621D68 /* BWG_VC.swift in Sources */,
 				1289A988267F6081002070FB /* DistanсeVC.swift in Sources */,
@@ -607,7 +617,7 @@
 				12495D3A268AFDB800DD6191 /* AuthorizationVC.swift in Sources */,
 				1289A986267F5D83002070FB /* AccelerVC.swift in Sources */,
 				122EF09A2690A33100888723 /* AudioVisualizerView.swift in Sources */,
-				12B05571268F8DCA00C778F2 /* FSpeakVC.swift in Sources */,
+				12B05571268F8DCA00C778F2 /* FrontSpeakVC.swift in Sources */,
 				124A0EE32675024700621D68 /* TouchVC.swift in Sources */,
 				12742AB1268864D9003D0BEE /* CanvasCompassV.swift in Sources */,
 				129530FA267296B40041F55F /* AppDelegate.swift in Sources */,

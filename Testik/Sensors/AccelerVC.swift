@@ -16,7 +16,6 @@ final class AccelerVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         statusLabel.text = "Shake your device"
-        //dismissButton.alpha = 0
         self.becomeFirstResponder()
     }
     
@@ -29,7 +28,6 @@ final class AccelerVC: UIViewController {
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             statusLabel.text = "Good, acceler works!"
-            //dismissButton.alpha = 1
             print("shake")
         }
     }

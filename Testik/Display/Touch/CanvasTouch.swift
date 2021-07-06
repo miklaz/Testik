@@ -17,13 +17,6 @@ final class CanvasTouch: UIView {
             return
         }
         
-        /*
-        let startPoint = CGPoint(x: 0, y: 0)
-        let endPoint = CGPoint(x: 100, y: 100)
-        context.move(to: startPoint)
-        context.addLine(to: endPoint)
-        */
-        
         context.setStrokeColor(UIColor.white.cgColor)
         context.setLineWidth(60)
         context.setLineCap(.round)
@@ -41,9 +34,6 @@ final class CanvasTouch: UIView {
         context.strokePath()
     }
     
-    
-    
-    //var line = [CGPoint]()
     var lines = [[CGPoint]]()
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -54,18 +44,11 @@ final class CanvasTouch: UIView {
         guard let point = touches.first?.location(in: nil) else {
             return}
         
-        //print (point)
-        
         guard var lastLine = lines.popLast() else {
             return
         }
         lastLine.append(point)
         lines.append(lastLine)
-        
-        //var lastLine = lines.last
-        //lastLine?.append(point)
-        //line.append(point)
-        
         setNeedsDisplay()
     }
     

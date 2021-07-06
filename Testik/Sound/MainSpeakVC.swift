@@ -1,5 +1,5 @@
 //
-//  MSpeakVC.swift
+//  MainSpeakVC.swift
 //  Testik
 //
 //  Created by Михаил Зайцев on 02.07.2021.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class MSpeakVC: UIViewController {
+final class MainSpeakVC: UIViewController {
     
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var info: UILabel!
@@ -16,13 +16,13 @@ class MSpeakVC: UIViewController {
     let pianoSound = URL(fileURLWithPath: Bundle.main.path(forResource: "testSound", ofType: "mp3")!)
     var audioPlayer = AVAudioPlayer()
     
-    @IBAction func Play(_ sender: UIButton) {
+    @IBAction func play(_ sender: UIButton) {
         
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: pianoSound)
             audioPlayer.play()
         } catch {
-            print("couldn't load file :(")
+            showAlert("Couldn't load file :(")
         }
         
         self.statusLabel.text = "Okay, if you heard the sound, then the main speaker works!"
@@ -32,6 +32,12 @@ class MSpeakVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.statusLabel.text = ""
+    }
+    
+    func showAlert(_ title: String) {   //  Выводит сообщения в виде alert
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
     
     @IBAction func dismissAction(_ sender: Any) {

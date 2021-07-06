@@ -38,60 +38,6 @@ final class CompassVC: UIViewController, CLLocationManagerDelegate {
         comppassLocationManager.stopUpdatingHeading()
         self.dismiss(animated: true, completion: nil)
     }
-    
-    
-    /*
-    func checkLocationEnabled () {
-        if CLLocationManager.locationServicesEnabled() {
-            setupManager ()
-            checkAutorization()        }
-        else {
-            showAlertLocation (title: "You have geolocation turned off", message: "Want to turn on?", url: URL(string: "App-Precfs:root=LOCATION_SERVICES"))
-        }
-    }
-    
-    func setupManager () {
-        comppassLocationManager.delegate = self
-        comppassLocationManager.desiredAccuracy = kCLLocationAccuracyBest
-    }
-
-    func checkAutorization () {
-        switch CLLocationManager.authorizationStatus() {
-        case .authorizedAlways:
-            break
-        case .authorizedWhenInUse:
-            //mapView.showsUserLocation = true
-            comppassLocationManager.startUpdatingLocation()
-            break
-        case .denied:
-            showAlertLocation(title: "You have banned the use of geolocation", message: "Want to change this?", url: URL(string: UIApplication.openSettingsURLString))
-            break
-        case .restricted:
-            break
-        case .notDetermined:
-            comppassLocationManager.requestWhenInUseAuthorization()
-        @unknown default:
-            print ("Oops...")
-        }
-    }
-    
-    func showAlertLocation (title: String, message:String?,url:URL?) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-        let settingsAction = UIAlertAction(title: "Settings", style: .default) { (alert) in
-            if let url = url{
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            }
-        }
-        
-        let cancelAction = UIAlertAction (title: "Cancel", style: .cancel, handler: nil)
-        
-        alert.addAction(settingsAction)
-        alert.addAction(cancelAction)
-        
-        present(alert, animated: true, completion: nil)
-    }
- */
 
 }
 

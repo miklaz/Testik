@@ -22,9 +22,7 @@ final class RGB_VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        self.colorView.addGestureRecognizer(tapGestureRecognizer)
-        //UIApplication.shared.isStatusBarHidden = true
-        
+        self.colorView.addGestureRecognizer(tapGestureRecognizer)        
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -40,10 +38,8 @@ final class RGB_VC: UIViewController {
     
     @IBAction func changeColor(_ sender: Any) {
         self.colorView.backgroundColor = colorOpt[self.segmentControl.selectedSegmentIndex]
-        //self.segmentControl.tintColor = colorOptItem[self.segmentControl.selectedSegmentIndex]
         self.hideItems.textColor = colorOptItem[self.segmentControl.selectedSegmentIndex]
         self.dismissButton.tintColor = colorOptItem[self.segmentControl.selectedSegmentIndex]
-        //self.dismissButton.tintColor = colorOpt[self.segmentControl.selectedSegmentIndex]
     }
     
     @IBAction func dismissAction(_ sender: Any) {

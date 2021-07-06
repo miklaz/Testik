@@ -50,23 +50,5 @@ final class AuthorizationVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    /*
-    @IBAction func useBiometrics(sender: UIButton) {
-            let context = LAContext()
-            
-            if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
-                context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Please authenticate to proceed.") { (success, error) in
-                    if success {
-                        DispatchQueue.main.async {
-                            // Что-то сделать
-                            self.dismiss(animated: true, completion: nil)
-                        }
-                    } else {
-                        guard let error = error else { return }
-                        print(error.localizedDescription)
-                    }
-                }
-            }
-        }
-*/
+    
 }
