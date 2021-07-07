@@ -10,8 +10,6 @@ import UIKit
 final class AccelerVC: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
-    @IBOutlet weak var dismissButton: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
