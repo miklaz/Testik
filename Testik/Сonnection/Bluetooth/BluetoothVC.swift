@@ -8,7 +8,7 @@
 import UIKit
 import CoreBluetooth
 
-class BluetoothVC: UIViewController{
+final class BluetoothVC: UIViewController{
     
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet var bluetoothSettingsButton: UIButton!

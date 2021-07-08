@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WiFi_VC: UIViewController {
+final class WiFi_VC: UIViewController {
     
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet var wifiSettingsButton: UIButton!
