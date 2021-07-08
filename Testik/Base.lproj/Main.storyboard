@@ -146,6 +146,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr9-3Y-og3">
                                 <rect key="frame" x="303" y="133" width="48" height="30"/>
                                 <state key="normal" title="Celluar"/>
+                                <connections>
+                                    <segue destination="xOr-Rk-3Of" kind="show" id="BlL-6Z-hUv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -1329,6 +1332,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbv-7C-XjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2362.3188405797105" y="-629.46428571428567"/>
+        </scene>
+        <!--CellularVC-->
+        <scene sceneID="a1k-ip-FGk">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="xOr-Rk-3Of" customClass="CellularVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lfc-5z-UU1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tq-fz-hLf">
+                                <rect key="frame" x="20" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="jvS-Eu-eEu"/>
+                                    <constraint firstAttribute="width" constant="45" id="kkU-eQ-lMg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="✕"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="xOr-Rk-3Of" eventType="touchUpInside" id="UnP-N8-hTf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StatusLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbp-Cx-F19">
+                                <rect key="frame" x="20" y="308" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxR-Tu-aor">
+                                <rect key="frame" x="100" y="423" width="214" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.36201562380000002" blue="0.75053537439999995" alpha="0.17895184450000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="ECW-d6-E37"/>
+                                    <constraint firstAttribute="height" constant="50" id="s72-ED-tV5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Open Wi-Fi Settings"/>
+                                <connections>
+                                    <action selector="openSettingsAction:" destination="xOr-Rk-3Of" eventType="touchUpInside" id="Y46-Dd-Sap"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ft3-k9-dTG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jxR-Tu-aor" firstAttribute="centerY" secondItem="Lfc-5z-UU1" secondAttribute="centerY" id="69G-b9-Enb"/>
+                            <constraint firstItem="4Tq-fz-hLf" firstAttribute="top" secondItem="ft3-k9-dTG" secondAttribute="top" constant="20" id="Mxp-3O-eOL"/>
+                            <constraint firstItem="Vbp-Cx-F19" firstAttribute="leading" secondItem="ft3-k9-dTG" secondAttribute="leading" constant="20" id="TUW-Td-Cdh"/>
+                            <constraint firstItem="jxR-Tu-aor" firstAttribute="centerX" secondItem="Lfc-5z-UU1" secondAttribute="centerX" id="TZe-UQ-xLz"/>
+                            <constraint firstItem="4Tq-fz-hLf" firstAttribute="leading" secondItem="ft3-k9-dTG" secondAttribute="leading" constant="20" id="izK-OH-44r"/>
+                            <constraint firstItem="Vbp-Cx-F19" firstAttribute="centerY" secondItem="Lfc-5z-UU1" secondAttribute="centerY" constant="-130" id="x9v-cW-ceg"/>
+                            <constraint firstItem="ft3-k9-dTG" firstAttribute="trailing" secondItem="Vbp-Cx-F19" secondAttribute="trailing" constant="20" id="xa7-Zm-l0F"/>
+                            <constraint firstItem="Vbp-Cx-F19" firstAttribute="centerX" secondItem="Lfc-5z-UU1" secondAttribute="centerX" id="yuR-Qj-Sri"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="v19-fs-XsQ"/>
+                    <connections>
+                        <outlet property="settingsButton" destination="jxR-Tu-aor" id="eSI-hJ-G92"/>
+                        <outlet property="statusLabel" destination="Vbp-Cx-F19" id="y8A-FD-t5a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugF-Yv-8SV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4738" y="-629"/>
         </scene>
     </scenes>
     <resources>

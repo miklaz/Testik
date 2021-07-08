@@ -49,6 +49,7 @@
 		12B0556F268F8B6A00C778F2 /* testSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12B0556E268F8B6A00C778F2 /* testSound.mp3 */; };
 		12B05571268F8DCA00C778F2 /* FrontSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B05570268F8DCA00C778F2 /* FrontSpeakVC.swift */; };
 		12BFFD20268F775C009EDEFA /* MainSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFFD1F268F775C009EDEFA /* MainSpeakVC.swift */; };
+		12C3A3492697375200604611 /* CellularVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C3A3482697375200604611 /* CellularVC.swift */; };
 		8A9BD86054FE3101ED4FB4ED /* Pods_Testik_TestikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22A903EF22D9BCFE6F5A7F9 /* Pods_Testik_TestikUITests.framework */; };
 		BB3FE5C4A7DBA71A173EB613 /* Pods_Testik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA4F2F8739EDB85A42D2F9C /* Pods_Testik.framework */; };
 		FC297C36B92A92E393A7AECC /* Pods_TestikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA17552F5248380CD895755 /* Pods_TestikTests.framework */; };
@@ -122,6 +123,7 @@
 		12B0556E268F8B6A00C778F2 /* testSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testSound.mp3; sourceTree = "<group>"; };
 		12B05570268F8DCA00C778F2 /* FrontSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontSpeakVC.swift; sourceTree = "<group>"; };
 		12BFFD1F268F775C009EDEFA /* MainSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSpeakVC.swift; sourceTree = "<group>"; };
+		12C3A3482697375200604611 /* CellularVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularVC.swift; sourceTree = "<group>"; };
 		1BDA99E3F255445D3127D7EF /* Pods-Testik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testik.release.xcconfig"; path = "Target Support Files/Pods-Testik/Pods-Testik.release.xcconfig"; sourceTree = "<group>"; };
 		3FA4F2F8739EDB85A42D2F9C /* Pods_Testik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Testik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F4563BD6F2F86907E6E88D /* Pods-TestikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestikTests.release.xcconfig"; path = "Target Support Files/Pods-TestikTests/Pods-TestikTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				12597D6C26958E7700D3D679 /* WiFi_VC.swift */,
+				12C3A3482697375200604611 /* CellularVC.swift */,
 				1270432426971FD100CB55D7 /* GPS_VC.swift */,
 				127043262697205300CB55D7 /* GPS_VC+Ext.swift */,
 				1270432326971FB500CB55D7 /* Bluetooth */,
@@ -659,6 +662,7 @@
 				1289A988267F6081002070FB /* DistanсeVC.swift in Sources */,
 				12495D3C268B230200DD6191 /* FlashVC.swift in Sources */,
 				1270432226971ED100CB55D7 /* BluetoothVC+Ext.swift in Sources */,
+				12C3A3492697375200604611 /* CellularVC.swift in Sources */,
 				12495D3A268AFDB800DD6191 /* AuthorizationVC.swift in Sources */,
 				1289A986267F5D83002070FB /* AccelerVC.swift in Sources */,
 				127043272697205300CB55D7 /* GPS_VC+Ext.swift in Sources */,
