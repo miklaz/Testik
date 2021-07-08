@@ -151,10 +151,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iww-r6-ACq">
-                                <rect key="frame" x="296" y="613" width="62" height="30"/>
+                                <rect key="frame" x="296" y="673" width="62" height="30"/>
                                 <state key="normal" title="Vibration"/>
                                 <connections>
                                     <segue destination="5k8-QL-RbE" kind="show" id="6ur-tb-bxg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FI-js-Lid">
+                                <rect key="frame" x="62" y="673" width="50" height="30"/>
+                                <state key="normal" title="Charge"/>
+                                <connections>
+                                    <segue destination="Rlp-tf-LMe" kind="show" id="hNo-Ce-cf3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -194,13 +201,15 @@
                             <constraint firstItem="g0m-U5-nUX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-180" id="r46-Wz-nFu"/>
                             <constraint firstItem="fbV-G8-HFp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="tDK-FP-rMB"/>
                             <constraint firstItem="CmR-bC-yFa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tRb-UW-fxM"/>
+                            <constraint firstItem="5FI-js-Lid" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="uFB-7G-9cY"/>
                             <constraint firstItem="iXN-vo-hAR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="v07-zE-fF5"/>
+                            <constraint firstItem="5FI-js-Lid" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="240" id="v4V-xV-KgJ"/>
                             <constraint firstItem="cgR-J7-Ft5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="vGo-tI-Jm7"/>
                             <constraint firstItem="iXN-vo-hAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="120" id="wTJ-fb-wRh"/>
                             <constraint firstItem="Y94-QB-rLv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="xet-Xa-DTz"/>
                             <constraint firstItem="AsI-Sj-Em3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="y9q-O0-ian"/>
                             <constraint firstItem="JjG-qm-nmD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="zmo-kN-F61"/>
-                            <constraint firstItem="iww-r6-ACq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="180" id="ztt-UN-gv6"/>
+                            <constraint firstItem="iww-r6-ACq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="240" id="ztt-UN-gv6"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -665,7 +674,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdV-iM-pRa">
-                                <rect key="frame" x="142.5" y="433" width="129" height="30"/>
+                                <rect key="frame" x="135.5" y="431.5" width="143" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Start Authorization"/>
                                 <connections>
                                     <action selector="touchID:" destination="1C6-y9-Bme" eventType="touchUpInside" id="ijT-Qw-Tjz"/>
@@ -1460,7 +1470,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrf-1n-kBz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-199" y="1615"/>
+            <point key="canvasLocation" x="493" y="1604"/>
+        </scene>
+        <!--ChargeVC-->
+        <scene sceneID="7cc-gC-P9y">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Rlp-tf-LMe" customClass="ChargeVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y4Q-yZ-Ih1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSe-ow-qCD">
+                                <rect key="frame" x="20" y="64" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="8k1-VT-hVK"/>
+                                    <constraint firstAttribute="height" constant="45" id="TTC-pV-FcI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="✕"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="Rlp-tf-LMe" eventType="touchUpInside" id="p2r-Fj-CzA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StatusLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tia-8F-ckg">
+                                <rect key="frame" x="20" y="308" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vP-27-qZc">
+                                <rect key="frame" x="161" y="431.5" width="92" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Test Charge"/>
+                                <connections>
+                                    <action selector="CheckCargeButton:" destination="Rlp-tf-LMe" eventType="touchUpInside" id="cDR-MX-pZb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Slp-Kk-Z76"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KSe-ow-qCD" firstAttribute="leading" secondItem="Slp-Kk-Z76" secondAttribute="leading" constant="20" id="2oC-li-6v6"/>
+                            <constraint firstItem="3vP-27-qZc" firstAttribute="centerX" secondItem="y4Q-yZ-Ih1" secondAttribute="centerX" id="7dT-nf-oqq"/>
+                            <constraint firstItem="3vP-27-qZc" firstAttribute="centerY" secondItem="y4Q-yZ-Ih1" secondAttribute="centerY" id="QMS-g0-72I"/>
+                            <constraint firstItem="KSe-ow-qCD" firstAttribute="top" secondItem="Slp-Kk-Z76" secondAttribute="top" constant="20" id="UWR-93-V39"/>
+                            <constraint firstItem="Slp-Kk-Z76" firstAttribute="trailing" secondItem="tia-8F-ckg" secondAttribute="trailing" constant="20" id="ahy-WF-lbi"/>
+                            <constraint firstItem="tia-8F-ckg" firstAttribute="centerY" secondItem="y4Q-yZ-Ih1" secondAttribute="centerY" constant="-130" id="cQF-68-xzL"/>
+                            <constraint firstItem="tia-8F-ckg" firstAttribute="centerX" secondItem="y4Q-yZ-Ih1" secondAttribute="centerX" id="mPS-iW-yS6"/>
+                            <constraint firstItem="tia-8F-ckg" firstAttribute="leading" secondItem="Slp-Kk-Z76" secondAttribute="leading" constant="20" id="y7f-ZB-X9U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KI3-vI-uen"/>
+                    <connections>
+                        <outlet property="CheckButton" destination="3vP-27-qZc" id="7RE-vR-dK3"/>
+                        <outlet property="statusLabel" destination="tia-8F-ckg" id="Ne6-ue-k3e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYM-ha-S2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-270" y="1604"/>
         </scene>
     </scenes>
     <resources>

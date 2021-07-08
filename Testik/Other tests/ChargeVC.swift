@@ -10,35 +10,35 @@ import UIKit
 class ChargeVC: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
-    @IBOutlet weak var FinishButton: UIButton!
     @IBOutlet weak var CheckButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         statusLabel.text = ""
-        FinishButton.alpha = 0
     }
     
     func checkForCharging() {
         UIDevice.current.isBatteryMonitoringEnabled = true
         if UIDevice.current.batteryState == .charging {
-            statusLabel.text = "Good, batery is charging!"
+            statusLabel.text = "Okey, battery is charging!"
+            statusLabel.textColor = .systemGreen
             CheckButton.alpha = 0
-            //print("Batery is charging")
         }
         else if UIDevice.current.batteryState == .unplugged {
             statusLabel.text = "Check the cable!"
-            //print("Check the cable")
+            statusLabel.textColor = .systemYellow
         }
     }
     
     @IBAction func CheckCargeButton(_ sender: Any) {
         checkForCharging()
-        FinishButton.alpha = 1
     }
     
-    //UIDevice.current.isBatteryMonitoringEnabled = false
+    @IBAction func dismissAction(_ sender: Any) {
+        UIDevice.current.isBatteryMonitoringEnabled = false
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
 
