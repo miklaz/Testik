@@ -75,6 +75,7 @@ final class FrontSpeakVC: UIViewController {
     
     @IBAction func dismissAction(_ sender: Any) {
         _ = UIDevice.current.isProximityMonitoringEnabled = false
+        NotificationCenter.default.removeObserver(self)
         self.dismiss(animated: true, completion: nil)
     }
 

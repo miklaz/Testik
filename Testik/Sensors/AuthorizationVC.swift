@@ -13,7 +13,6 @@ final class AuthorizationVC: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var tapForTestButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

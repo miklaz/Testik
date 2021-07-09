@@ -8,7 +8,7 @@
 import UIKit
 import AudioToolbox
 
-class VibrationVC: UIViewController {
+final class VibrationVC: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
     
