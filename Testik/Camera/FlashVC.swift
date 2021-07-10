@@ -56,6 +56,7 @@ final class FlashVC: UIViewController {
     }
     
     @IBAction func dismissAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
         guard let device = AVCaptureDevice.default(for: AVMediaType.video) else{
             return
         }
@@ -72,7 +73,7 @@ final class FlashVC: UIViewController {
             }
         }
         
-        self.dismiss(animated: true, completion: nil)
+        
     }
     
 

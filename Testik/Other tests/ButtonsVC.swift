@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class ButtonsVC: UIViewController {
+final class ButtonsVC: UIViewController {
 
     @IBOutlet var upVolumeLabel: UILabel!
     @IBOutlet var downVolumeLabel: UILabel!
@@ -19,7 +19,6 @@ class ButtonsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         listenVolumeButton()
     }
     
@@ -40,7 +39,7 @@ class ButtonsVC: UIViewController {
         if keyPath == "outputVolume"{
             let audioSession = AVAudioSession.sharedInstance()
             if audioSession.outputVolume > audioLevel {
-                print("UP")
+                print("Up")
                 upVolumeLabel.text = "👍"
             }
             if audioSession.outputVolume < audioLevel {

@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class PhotoVC: UIViewController {
+final class PhotoVC: UIViewController {
 
     // MARK: - Const, Var & Outlets
     @IBOutlet var avatarImageView: UIImageView!
