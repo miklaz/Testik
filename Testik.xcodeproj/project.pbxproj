@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1211B40F267B495E00B2F9A2 /* Contrast&Gamma_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1211B40E267B495E00B2F9A2 /* Contrast&Gamma_VC.swift */; };
+		12495D3A268AFDB800DD6191 /* AuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12495D39268AFDB800DD6191 /* AuthorizationVC.swift */; };
 		124A0EDE2675022C00621D68 /* RGB_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EDD2675022C00621D68 /* RGB_VC.swift */; };
-		124A0EE32675024700621D68 /* Touch_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EE22675024700621D68 /* Touch_VC.swift */; };
+		124A0EE32675024700621D68 /* TouchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EE22675024700621D68 /* TouchVC.swift */; };
 		124A0EE82675026500621D68 /* BWG_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EE72675026500621D68 /* BWG_VC.swift */; };
+		1259866B26875B5600EA42F0 /* AmbientLightSensorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1259866A26875B5600EA42F0 /* AmbientLightSensorVC.swift */; };
+		12742AAE268861C5003D0BEE /* CanvasTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12742AAD268861C5003D0BEE /* CanvasTouch.swift */; };
+		12742AB1268864D9003D0BEE /* CanvasCompassV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12742AB0268864D9003D0BEE /* CanvasCompassV.swift */; };
+		12742AB3268864FE003D0BEE /* CompassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12742AB2268864FE003D0BEE /* CompassVC.swift */; };
+		1289A986267F5D83002070FB /* AccelerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1289A985267F5D83002070FB /* AccelerVC.swift */; };
+		1289A988267F6081002070FB /* DistanсeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1289A987267F6081002070FB /* DistanсeVC.swift */; };
 		129530FA267296B40041F55F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530F9267296B40041F55F /* AppDelegate.swift */; };
 		129530FC267296B40041F55F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530FB267296B40041F55F /* SceneDelegate.swift */; };
 		129530FE267296B40041F55F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530FD267296B40041F55F /* ViewController.swift */; };
@@ -40,9 +47,16 @@
 
 /* Begin PBXFileReference section */
 		1211B40E267B495E00B2F9A2 /* Contrast&Gamma_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contrast&Gamma_VC.swift"; sourceTree = "<group>"; };
+		12495D39268AFDB800DD6191 /* AuthorizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationVC.swift; sourceTree = "<group>"; };
 		124A0EDD2675022C00621D68 /* RGB_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB_VC.swift; sourceTree = "<group>"; };
-		124A0EE22675024700621D68 /* Touch_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_VC.swift; sourceTree = "<group>"; };
+		124A0EE22675024700621D68 /* TouchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchVC.swift; sourceTree = "<group>"; };
 		124A0EE72675026500621D68 /* BWG_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWG_VC.swift; sourceTree = "<group>"; };
+		1259866A26875B5600EA42F0 /* AmbientLightSensorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientLightSensorVC.swift; sourceTree = "<group>"; };
+		12742AAD268861C5003D0BEE /* CanvasTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasTouch.swift; sourceTree = "<group>"; };
+		12742AB0268864D9003D0BEE /* CanvasCompassV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasCompassV.swift; sourceTree = "<group>"; };
+		12742AB2268864FE003D0BEE /* CompassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassVC.swift; sourceTree = "<group>"; };
+		1289A985267F5D83002070FB /* AccelerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerVC.swift; sourceTree = "<group>"; };
+		1289A987267F6081002070FB /* DistanсeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DistanсeVC.swift"; sourceTree = "<group>"; };
 		129530F6267296B40041F55F /* Testik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129530F9267296B40041F55F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		129530FB267296B40041F55F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +107,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		12742AAC26886129003D0BEE /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				124A0EE22675024700621D68 /* TouchVC.swift */,
+				12742AAD268861C5003D0BEE /* CanvasTouch.swift */,
+			);
+			path = Touch;
+			sourceTree = "<group>";
+		};
+		12742AAF268864B2003D0BEE /* Compass */ = {
+			isa = PBXGroup;
+			children = (
+				12742AB2268864FE003D0BEE /* CompassVC.swift */,
+				12742AB0268864D9003D0BEE /* CanvasCompassV.swift */,
+			);
+			path = Compass;
+			sourceTree = "<group>";
+		};
+		1289A984267F5CE8002070FB /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				1289A985267F5D83002070FB /* AccelerVC.swift */,
+				1289A987267F6081002070FB /* DistanсeVC.swift */,
+				1259866A26875B5600EA42F0 /* AmbientLightSensorVC.swift */,
+				12495D39268AFDB800DD6191 /* AuthorizationVC.swift */,
+				12742AAF268864B2003D0BEE /* Compass */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
 		129530ED267296B40041F55F = {
 			isa = PBXGroup;
 			children = (
@@ -118,10 +162,11 @@
 			children = (
 				129530F9267296B40041F55F /* AppDelegate.swift */,
 				129530FB267296B40041F55F /* SceneDelegate.swift */,
-				124A0EEC2675027B00621D68 /* View */,
 				129530FF267296B40041F55F /* Main.storyboard */,
-				12953102267296B60041F55F /* Assets.xcassets */,
 				12953104267296B60041F55F /* LaunchScreen.storyboard */,
+				124A0EEC2675027B00621D68 /* View */,
+				1289A984267F5CE8002070FB /* Sensors */,
+				12953102267296B60041F55F /* Assets.xcassets */,
 				12953107267296B60041F55F /* Info.plist */,
 			);
 			path = Testik;
@@ -148,10 +193,10 @@
 		12BA3288267F582300ED280D /* Display */ = {
 			isa = PBXGroup;
 			children = (
-				124A0EE22675024700621D68 /* Touch_VC.swift */,
 				124A0EDD2675022C00621D68 /* RGB_VC.swift */,
 				124A0EE72675026500621D68 /* BWG_VC.swift */,
 				1211B40E267B495E00B2F9A2 /* Contrast&Gamma_VC.swift */,
+				12742AAC26886129003D0BEE /* Touch */,
 			);
 			path = Display;
 			sourceTree = "<group>";
@@ -287,11 +332,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				129530FE267296B40041F55F /* ViewController.swift in Sources */,
+				12742AAE268861C5003D0BEE /* CanvasTouch.swift in Sources */,
 				124A0EE82675026500621D68 /* BWG_VC.swift in Sources */,
-				124A0EE32675024700621D68 /* Touch_VC.swift in Sources */,
+				1289A988267F6081002070FB /* DistanсeVC.swift in Sources */,
+				12495D3A268AFDB800DD6191 /* AuthorizationVC.swift in Sources */,
+				1289A986267F5D83002070FB /* AccelerVC.swift in Sources */,
+				124A0EE32675024700621D68 /* TouchVC.swift in Sources */,
+				12742AB1268864D9003D0BEE /* CanvasCompassV.swift in Sources */,
 				129530FA267296B40041F55F /* AppDelegate.swift in Sources */,
+				12742AB3268864FE003D0BEE /* CompassVC.swift in Sources */,
 				124A0EDE2675022C00621D68 /* RGB_VC.swift in Sources */,
 				129530FC267296B40041F55F /* SceneDelegate.swift in Sources */,
+				1259866B26875B5600EA42F0 /* AmbientLightSensorVC.swift in Sources */,
 				1211B40F267B495E00B2F9A2 /* Contrast&Gamma_VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

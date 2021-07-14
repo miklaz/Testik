@@ -1,5 +1,5 @@
 //
-//  Contrast&Gamma_VC.swift
+//  Contrast&GammaVC.swift
 //  Testik
 //
 //  Created by Михаил Зайцев on 17.06.2021.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class Contrast_Gamma_VC: UIViewController {
+final class Contrast_GammaVC: UIViewController {
 
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet var colorImage: UIImageView!
     
-    var colorOpt = ["Contrast_iphone11", "Gradient_iphone11", "Gamma_iphone11"]
+    let colorOpt = ["Contrast_iphone11", "Gradient_iphone11", "Gamma_iphone11"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

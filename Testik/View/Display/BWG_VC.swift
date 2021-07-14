@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BWG_VC: UIViewController {
+final class BWG_VC: UIViewController {
 
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
