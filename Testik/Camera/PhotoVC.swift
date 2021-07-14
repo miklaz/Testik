@@ -23,7 +23,6 @@ class PhotoVC: UIViewController {
         savePhotoButton.alpha = 0
     }
     
-    
     // MARK: - Methods
     // Обработка результата сохранения фото
     @objc func image(_ image: UIImage,
