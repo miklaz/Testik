@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class HeadphonesSpeakVC: UIViewController {
+final class HeadphonesSpeakVC: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet var playButton: UIButton!

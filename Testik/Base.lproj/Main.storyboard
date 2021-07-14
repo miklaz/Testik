@@ -1,235 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DF1-kG-EgP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main MenuVC-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainMenuVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjG-qm-nmD">
-                                <rect key="frame" x="66" y="433" width="42" height="30"/>
-                                <state key="normal" title="Touch"/>
-                                <connections>
-                                    <segue destination="x9e-7h-TYH" kind="show" id="hBa-AS-eup"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNz-Hf-c7c">
-                                <rect key="frame" x="191.5" y="433" width="31" height="30"/>
-                                <state key="normal" title="RGB"/>
-                                <connections>
-                                    <segue destination="TFn-6v-VgG" kind="show" id="oMQ-uL-scR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUO-qO-Zuv">
-                                <rect key="frame" x="309.5" y="433" width="35" height="30"/>
-                                <state key="normal" title="BWG"/>
-                                <connections>
-                                    <segue destination="Kbv-rd-vaX" kind="show" id="vHF-Lp-0hd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fS-X3-tu2">
-                                <rect key="frame" x="57" y="493" width="60" height="30"/>
-                                <state key="normal" title="Contrast"/>
-                                <connections>
-                                    <segue destination="8L0-h3-1eo" kind="show" id="Gen-Ab-4dp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAv-fn-bJo">
-                                <rect key="frame" x="172.5" y="553" width="69" height="30"/>
-                                <state key="normal" title="Acc&amp;Gyro"/>
-                                <connections>
-                                    <segue destination="L4S-Xc-val" kind="show" id="cgC-6A-gne"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-vo-hAR">
-                                <rect key="frame" x="296.5" y="553" width="61" height="30"/>
-                                <state key="normal" title="Distanсe"/>
-                                <connections>
-                                    <segue destination="CuE-qT-Z7q" kind="show" id="fQC-00-cD3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y94-QB-rLv">
-                                <rect key="frame" x="52" y="553" width="70" height="30"/>
-                                <state key="normal" title="AmbiLight"/>
-                                <connections>
-                                    <segue destination="FMo-8R-FE0" kind="show" id="JrN-GZ-XJE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmR-bC-yFa">
-                                <rect key="frame" x="175" y="613" width="64" height="30"/>
-                                <state key="normal" title="Compass"/>
-                                <connections>
-                                    <segue destination="H2G-ci-fWz" kind="show" id="lWZ-2e-eHN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ia-D0-Qam">
-                                <rect key="frame" x="41" y="613" width="92" height="30"/>
-                                <state key="normal" title="Authorization"/>
-                                <connections>
-                                    <segue destination="1C6-y9-Bme" kind="show" id="Cmg-Hw-538"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsI-Sj-Em3">
-                                <rect key="frame" x="68.5" y="373" width="37" height="30"/>
-                                <state key="normal" title="Flash"/>
-                                <connections>
-                                    <segue destination="4Hk-RF-UY7" kind="show" id="daU-Vp-G2J"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgR-J7-Ft5">
-                                <rect key="frame" x="180" y="373" width="54" height="30"/>
-                                <state key="normal" title="Camera"/>
-                                <connections>
-                                    <segue destination="JHg-je-4qZ" kind="show" id="tyL-xQ-v2e"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPF-Y9-Inp">
-                                <rect key="frame" x="40.5" y="253" width="93" height="30"/>
-                                <state key="normal" title="Main Speaker"/>
-                                <connections>
-                                    <segue destination="oYD-7K-919" kind="show" id="f1b-qv-Qoi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heg-4a-KCt">
-                                <rect key="frame" x="159" y="253" width="96" height="30"/>
-                                <state key="normal" title="Front Speaker"/>
-                                <connections>
-                                    <segue destination="VJp-fQ-fOb" kind="show" id="pRh-Rd-4yE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbV-G8-HFp">
-                                <rect key="frame" x="46" y="313" width="82" height="30"/>
-                                <state key="normal" title="Microphone"/>
-                                <connections>
-                                    <segue destination="pQn-oz-RIk" kind="show" id="AyI-0H-B7d"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0m-U5-nUX">
-                                <rect key="frame" x="283.5" y="253" width="87" height="30"/>
-                                <state key="normal" title="Headphones"/>
-                                <connections>
-                                    <segue destination="xCd-om-lSF" kind="show" id="ZHf-ct-lBp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MD-T9-7dg">
-                                <rect key="frame" x="68.5" y="133" width="37" height="30"/>
-                                <state key="normal" title="Wi-Fi"/>
-                                <connections>
-                                    <segue destination="9uN-aS-Ni4" kind="show" id="TQS-aR-Zdu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSY-TT-S2x">
-                                <rect key="frame" x="173.5" y="133" width="67" height="30"/>
-                                <state key="normal" title="Bluetooth"/>
-                                <connections>
-                                    <segue destination="Paq-E5-Nle" kind="show" id="aTL-v3-zmf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkv-oe-hgw">
-                                <rect key="frame" x="72" y="193" width="30" height="30"/>
-                                <state key="normal" title="GPS"/>
-                                <connections>
-                                    <segue destination="HW4-3e-4ol" kind="show" id="XNl-m9-ajC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr9-3Y-og3">
-                                <rect key="frame" x="301" y="133" width="52" height="30"/>
-                                <state key="normal" title="Cellular"/>
-                                <connections>
-                                    <segue destination="xOr-Rk-3Of" kind="show" id="BlL-6Z-hUv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iww-r6-ACq">
-                                <rect key="frame" x="296" y="673" width="62" height="30"/>
-                                <state key="normal" title="Vibration"/>
-                                <connections>
-                                    <segue destination="5k8-QL-RbE" kind="show" id="6ur-tb-bxg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FI-js-Lid">
-                                <rect key="frame" x="62" y="673" width="50" height="30"/>
-                                <state key="normal" title="Charge"/>
-                                <connections>
-                                    <segue destination="Rlp-tf-LMe" kind="show" id="hNo-Ce-cf3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjM-Qa-TxX">
-                                <rect key="frame" x="180" y="673" width="54" height="30"/>
-                                <state key="normal" title="Buttons"/>
-                                <connections>
-                                    <segue destination="tGq-cY-CML" kind="show" id="vg1-en-yEQ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="bkv-oe-hgw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="3Av-HB-7e3"/>
-                            <constraint firstItem="7MD-T9-7dg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-300" id="3uc-5p-iuu"/>
-                            <constraint firstItem="XjM-Qa-TxX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Hx-As-ukL"/>
-                            <constraint firstItem="YSY-TT-S2x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fp-Gc-Ccs"/>
-                            <constraint firstItem="DAv-fn-bJo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="7kf-oO-Mzw"/>
-                            <constraint firstItem="CmR-bC-yFa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="180" id="8wx-9M-MK5"/>
-                            <constraint firstItem="yUO-qO-Zuv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bi6-y7-ISd"/>
-                            <constraint firstItem="DAv-fn-bJo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BsD-Gc-kKS"/>
-                            <constraint firstItem="Y94-QB-rLv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="C0U-9F-0oW"/>
-                            <constraint firstItem="iww-r6-ACq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="120" id="Dgn-qp-O2p"/>
-                            <constraint firstItem="fbV-G8-HFp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-120" id="EBO-HW-VIg"/>
-                            <constraint firstItem="1Ia-D0-Qam" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="F4o-9A-feN"/>
-                            <constraint firstItem="DNz-Hf-c7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IM3-bK-tzy"/>
-                            <constraint firstItem="AsI-Sj-Em3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="KFC-QL-ezR"/>
-                            <constraint firstItem="cgR-J7-Ft5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OVe-Vy-BBh"/>
-                            <constraint firstItem="heg-4a-KCt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PUC-mJ-eSZ"/>
-                            <constraint firstItem="YSY-TT-S2x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-300" id="RJd-Ya-xLU"/>
-                            <constraint firstItem="Cr9-3Y-og3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-300" id="RgE-wd-i1E"/>
-                            <constraint firstItem="heg-4a-KCt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-180" id="T89-ZU-72G"/>
-                            <constraint firstItem="vPF-Y9-Inp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-180" id="U1N-ij-aP1"/>
-                            <constraint firstItem="Cr9-3Y-og3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="120" id="U6n-GB-Ehq"/>
-                            <constraint firstItem="1Ia-D0-Qam" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="180" id="Ymj-FC-pGC"/>
-                            <constraint firstItem="DNz-Hf-c7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZBa-sD-1YX"/>
-                            <constraint firstItem="7MD-T9-7dg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="aCt-V3-prM"/>
-                            <constraint firstItem="bkv-oe-hgw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-240" id="dWx-jo-Tgl"/>
-                            <constraint firstItem="8fS-X3-tu2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="jJB-uD-8aC"/>
-                            <constraint firstItem="g0m-U5-nUX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="120" id="kmM-nc-DPO"/>
-                            <constraint firstItem="yUO-qO-Zuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="120" id="kqR-31-VFo"/>
-                            <constraint firstItem="8fS-X3-tu2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="mCS-yy-Qh5"/>
-                            <constraint firstItem="XjM-Qa-TxX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="240" id="oW2-Uz-UI3"/>
-                            <constraint firstItem="vPF-Y9-Inp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="q4s-n8-odI"/>
-                            <constraint firstItem="JjG-qm-nmD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qTZ-J5-M6F"/>
-                            <constraint firstItem="g0m-U5-nUX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-180" id="r46-Wz-nFu"/>
-                            <constraint firstItem="fbV-G8-HFp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="tDK-FP-rMB"/>
-                            <constraint firstItem="CmR-bC-yFa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tRb-UW-fxM"/>
-                            <constraint firstItem="5FI-js-Lid" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="uFB-7G-9cY"/>
-                            <constraint firstItem="iXN-vo-hAR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="v07-zE-fF5"/>
-                            <constraint firstItem="5FI-js-Lid" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="240" id="v4V-xV-KgJ"/>
-                            <constraint firstItem="cgR-J7-Ft5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="vGo-tI-Jm7"/>
-                            <constraint firstItem="iXN-vo-hAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="120" id="wTJ-fb-wRh"/>
-                            <constraint firstItem="Y94-QB-rLv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="xet-Xa-DTz"/>
-                            <constraint firstItem="AsI-Sj-Em3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="y9q-O0-ian"/>
-                            <constraint firstItem="JjG-qm-nmD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="zmo-kN-F61"/>
-                            <constraint firstItem="iww-r6-ACq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="240" id="ztt-UN-gv6"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-396" y="225"/>
-        </scene>
         <!--RGB_VC-->
         <scene sceneID="84F-jt-BWN">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="TFn-6v-VgG" customClass="RGB_VC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RGB" modalPresentationStyle="fullScreen" id="TFn-6v-VgG" customClass="RGB_VC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iOP-dg-q9C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -308,7 +92,7 @@
         <!--TouchVC-->
         <scene sceneID="K6l-Ng-Xny">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="x9e-7h-TYH" customClass="TouchVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Touch" modalPresentationStyle="fullScreen" id="x9e-7h-TYH" customClass="TouchVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vdm-1B-51I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -345,7 +129,7 @@
         <!--BWG_VC-->
         <scene sceneID="j9h-Vf-1zB">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Kbv-rd-vaX" customClass="BWG_VC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BWG" modalPresentationStyle="fullScreen" id="Kbv-rd-vaX" customClass="BWG_VC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oxw-lE-5xV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -424,7 +208,7 @@
         <!--Contrast GammaVC-->
         <scene sceneID="ZiM-9o-Tsg">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="8L0-h3-1eo" customClass="Contrast_GammaVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Contrast" modalPresentationStyle="fullScreen" id="8L0-h3-1eo" customClass="Contrast_GammaVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AlK-jV-3ya">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -490,7 +274,7 @@
         <!--AccelerVC-->
         <scene sceneID="AaE-yW-b6N">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="L4S-Xc-val" customClass="AccelerVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Accelerometer" modalPresentationStyle="fullScreen" id="L4S-Xc-val" customClass="AccelerVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Toj-SJ-gDt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -530,12 +314,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rlp-V5-pgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4345" y="453"/>
+            <point key="canvasLocation" x="4148" y="2658"/>
         </scene>
         <!--DistanсeVC-->
         <scene sceneID="2ms-g5-24D">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="CuE-qT-Z7q" customClass="DistanсeVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Distanсe" modalPresentationStyle="fullScreen" id="CuE-qT-Z7q" customClass="DistanсeVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RDM-i0-EUB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -575,12 +359,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfT-fi-ecO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3541" y="453"/>
+            <point key="canvasLocation" x="3354" y="2658"/>
         </scene>
         <!--Ambient Light SensorVC-->
         <scene sceneID="5yk-nm-jdx">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="FMo-8R-FE0" customClass="AmbientLightSensorVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AmbiLight" modalPresentationStyle="fullScreen" id="FMo-8R-FE0" customClass="AmbientLightSensorVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fod-Vz-tvs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -620,12 +404,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSd-Ef-7DE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5145" y="453"/>
+            <point key="canvasLocation" x="4958" y="2658"/>
         </scene>
         <!--CompassVC-->
         <scene sceneID="9jg-95-kIT">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="H2G-ci-fWz" customClass="CompassVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Compass" modalPresentationStyle="fullScreen" id="H2G-ci-fWz" customClass="CompassVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8kv-uo-dzK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -654,12 +438,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blK-EZ-xYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1961" y="453"/>
+            <point key="canvasLocation" x="1774" y="2658"/>
         </scene>
         <!--AuthorizationVC-->
         <scene sceneID="Z6h-Qw-qRd">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="1C6-y9-Bme" customClass="AuthorizationVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Authorization" modalPresentationStyle="fullScreen" id="1C6-y9-Bme" customClass="AuthorizationVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L2e-Lu-1Kq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -712,12 +496,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbJ-gp-1eP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2738" y="453"/>
+            <point key="canvasLocation" x="2551" y="2658"/>
         </scene>
         <!--FlashVC-->
         <scene sceneID="u14-Up-ujK">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="4Hk-RF-UY7" customClass="FlashVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Flash" modalPresentationStyle="fullScreen" id="4Hk-RF-UY7" customClass="FlashVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WIn-Vu-edn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -770,12 +554,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKO-kG-GaO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4158" y="1615"/>
+            <point key="canvasLocation" x="2551" y="1819"/>
         </scene>
         <!--PhotoVC-->
         <scene sceneID="Udi-TY-gDT">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="JHg-je-4qZ" customClass="PhotoVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Camera" modalPresentationStyle="fullScreen" id="JHg-je-4qZ" customClass="PhotoVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9t-mn-Gj5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -834,12 +618,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6Y-bR-9Bj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5145" y="1615"/>
+            <point key="canvasLocation" x="1774" y="1819"/>
         </scene>
         <!--Main SpeakVC-->
         <scene sceneID="9Hb-S5-rvK">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="oYD-7K-919" customClass="MainSpeakVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main Speaker" modalPresentationStyle="fullScreen" id="oYD-7K-919" customClass="MainSpeakVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ilS-YV-2He">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -901,12 +685,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVP-5w-32c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6922" y="1604"/>
+            <point key="canvasLocation" x="1774" y="198"/>
         </scene>
         <!--Front SpeakVC-->
         <scene sceneID="COx-fd-rej">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="VJp-fQ-fOb" customClass="FrontSpeakVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Front Speaker" modalPresentationStyle="fullScreen" id="VJp-fQ-fOb" customClass="FrontSpeakVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0qL-Ij-G02">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -948,27 +732,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faQ-eH-Mes" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6070" y="1604"/>
+            <point key="canvasLocation" x="2551" y="198"/>
         </scene>
         <!--Record and listen-->
         <scene sceneID="64f-ru-2nJ">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="XoK-IR-YYS" customClass="MicrophoneVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QgO-4T-XyF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1IK-UX-9Rr">
-                                <rect key="frame" x="0.0" y="64" width="414" height="744"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="766"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yg2-W9-WqA">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="558"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="574.5"/>
                                         <connections>
                                             <segue destination="cwN-7U-HG3" kind="embed" id="aRY-hx-O92"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ytj-di-TUa" userLabel="Recorder View">
-                                        <rect key="frame" x="0.0" y="558" width="414" height="186"/>
+                                        <rect key="frame" x="0.0" y="574.5" width="414" height="191.5"/>
                                         <connections>
                                             <segue destination="5cq-yr-76N" kind="embed" id="Ude-AT-jcN"/>
                                         </connections>
@@ -999,7 +783,7 @@
                     <navigationItem key="navigationItem" title="Record and listen" largeTitleDisplayMode="never" id="yzF-Cm-nBm">
                         <barButtonItem key="leftBarButtonItem" style="done" id="qKg-6U-It7">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1D3-sb-dvp">
-                                <rect key="frame" x="20" y="6" width="92" height="44"/>
+                                <rect key="frame" x="20" y="0.0" width="92" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="✕"/>
@@ -1016,18 +800,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qyv-JD-P5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3572" y="1604"/>
+            <point key="canvasLocation" x="4958" y="198"/>
         </scene>
         <!--RecordingsVC-->
         <scene sceneID="Gku-Sn-qrZ">
             <objects>
                 <viewController id="cwN-7U-HG3" customClass="RecordingsVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E12-le-1n0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="558"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="574.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Td-YK-BBR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="514"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="530.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="cwN-7U-HG3" id="fNL-eN-ghG"/>
@@ -1035,7 +819,7 @@
                                 </connections>
                             </tableView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uir-j0-eB6" userLabel="Fade View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="514"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="530.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.45005904800000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -1062,12 +846,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mz-A8-lgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2630" y="1491"/>
+            <point key="canvasLocation" x="6064" y="85"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VMT-iG-Qr9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="pQn-oz-RIk" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Microphone" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="pQn-oz-RIk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="5RO-bd-oSt">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -1080,7 +864,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kE-cW-vdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4396" y="1604"/>
+            <point key="canvasLocation" x="4158" y="198"/>
         </scene>
         <!--RecorderVC-->
         <scene sceneID="pMP-gG-WR2">
@@ -1111,12 +895,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2u-Iz-aEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2630" y="1866"/>
+            <point key="canvasLocation" x="6066" y="459"/>
         </scene>
         <!--Headphones SpeakVC-->
         <scene sceneID="Gfg-TL-c6K">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="xCd-om-lSF" customClass="HeadphonesSpeakVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Headphones" modalPresentationStyle="fullScreen" id="xCd-om-lSF" customClass="HeadphonesSpeakVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fH3-y0-sfa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1169,12 +953,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgZ-OK-hNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5238" y="1604"/>
+            <point key="canvasLocation" x="3354" y="209"/>
         </scene>
         <!--Wi FiVC-->
         <scene sceneID="YZy-o6-EH5">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="9uN-aS-Ni4" customClass="WiFi_VC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Wi-Fi" modalPresentationStyle="fullScreen" id="9uN-aS-Ni4" customClass="WiFi_VC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5F2-HJ-m8s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1232,12 +1016,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9H0-Ac-Saa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3939" y="-629"/>
+            <point key="canvasLocation" x="2551" y="1011"/>
         </scene>
         <!--BluetoothVC-->
         <scene sceneID="kXt-z7-Ckp">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Paq-E5-Nle" customClass="BluetoothVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Bluetooth" modalPresentationStyle="fullScreen" id="Paq-E5-Nle" customClass="BluetoothVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i43-Fw-Oaa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1295,12 +1079,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcj-rY-1hh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3186" y="-629"/>
+            <point key="canvasLocation" x="3354" y="1010"/>
+        </scene>
+        <!--Main MenuVC-->
+        <scene sceneID="F8g-tB-KQB">
+            <objects>
+                <viewController id="DF1-kG-EgP" customClass="MainMenuVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="voV-s2-JDf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gK0-Uq-qh4">
+                                <rect key="frame" x="16" y="44" width="382" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="o94-0U-eST">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="estimatedItemSize" width="120" height="120"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="sG6-AY-adr" customClass="MyCollectionViewCell" customModule="Testik" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g1K-LQ-myh">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accelerometer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwR-dN-geQ">
+                                                    <rect key="frame" x="14" y="55" width="100" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uwR-dN-geQ" firstAttribute="centerY" secondItem="g1K-LQ-myh" secondAttribute="centerY" id="6SX-W7-1Do"/>
+                                                <constraint firstItem="uwR-dN-geQ" firstAttribute="centerX" secondItem="g1K-LQ-myh" secondAttribute="centerX" id="EmC-Fn-DCU"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uwR-dN-geQ" secondAttribute="trailing" constant="8" id="heh-Ol-zKj"/>
+                                                <constraint firstItem="uwR-dN-geQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="g1K-LQ-myh" secondAttribute="leading" constant="8" id="yuL-vC-yu5"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="myLabel" destination="uwR-dN-geQ" id="90L-lX-6iA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3yr-Bl-i22">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="DF1-kG-EgP" id="RnP-a6-5Y7"/>
+                                    <outlet property="delegate" destination="DF1-kG-EgP" id="i6O-cM-s25"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fie-9u-1FQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fie-9u-1FQ" firstAttribute="trailing" secondItem="gK0-Uq-qh4" secondAttribute="trailing" constant="16" id="8Lz-63-82B"/>
+                            <constraint firstAttribute="bottom" secondItem="gK0-Uq-qh4" secondAttribute="bottom" id="Kyq-om-D0w"/>
+                            <constraint firstItem="gK0-Uq-qh4" firstAttribute="leading" secondItem="Fie-9u-1FQ" secondAttribute="leading" constant="16" id="Ylg-Er-00h"/>
+                            <constraint firstItem="gK0-Uq-qh4" firstAttribute="top" secondItem="Fie-9u-1FQ" secondAttribute="top" id="iGO-ih-0W2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="gK0-Uq-qh4" id="21L-Lu-DFi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEe-3m-g8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1132" y="1455"/>
         </scene>
         <!--GPS_VC-->
         <scene sceneID="jyK-aG-FgV">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="HW4-3e-4ol" customClass="GPS_VC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GPS" modalPresentationStyle="fullScreen" id="HW4-3e-4ol" customClass="GPS_VC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x5U-V4-l1M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1359,12 +1215,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbv-7C-XjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2362.3188405797105" y="-629.46428571428567"/>
+            <point key="canvasLocation" x="4158" y="1010"/>
         </scene>
         <!--CellularVC-->
         <scene sceneID="a1k-ip-FGk">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="xOr-Rk-3Of" customClass="CellularVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Cellular" modalPresentationStyle="fullScreen" id="xOr-Rk-3Of" customClass="CellularVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lfc-5z-UU1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1422,12 +1278,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugF-Yv-8SV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4738" y="-629"/>
+            <point key="canvasLocation" x="1774" y="1011"/>
         </scene>
         <!--VibrationVC-->
         <scene sceneID="gEd-M2-Zdf">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="5k8-QL-RbE" customClass="VibrationVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Vibration" modalPresentationStyle="fullScreen" id="5k8-QL-RbE" customClass="VibrationVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wrk-ft-ydA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1479,12 +1335,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrf-1n-kBz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="1604"/>
+            <point key="canvasLocation" x="2551" y="3485"/>
         </scene>
         <!--ChargeVC-->
         <scene sceneID="7cc-gC-P9y">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Rlp-tf-LMe" customClass="ChargeVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Charge" modalPresentationStyle="fullScreen" id="Rlp-tf-LMe" customClass="ChargeVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y4Q-yZ-Ih1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1537,12 +1393,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYM-ha-S2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-270" y="1604"/>
+            <point key="canvasLocation" x="1774" y="3485"/>
         </scene>
         <!--ButtonsVC-->
         <scene sceneID="fiX-pJ-rhH">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="tGq-cY-CML" customClass="ButtonsVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Buttons" modalPresentationStyle="fullScreen" id="tGq-cY-CML" customClass="ButtonsVC" customModule="Testik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UnQ-UW-C6Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1600,7 +1456,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsM-l9-egk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1249" y="1604"/>
+            <point key="canvasLocation" x="3354" y="3485"/>
         </scene>
     </scenes>
     <resources>

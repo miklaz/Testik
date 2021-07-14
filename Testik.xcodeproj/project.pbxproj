@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1201D2C3269A1F9B00EA7341 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1201D2C2269A1F9B00EA7341 /* HeaderCollectionReusableView.swift */; };
 		1211B40F267B495E00B2F9A2 /* Contrast&Gamma_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1211B40E267B495E00B2F9A2 /* Contrast&Gamma_VC.swift */; };
 		122EF0972690A2E100888723 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF0962690A2E100888723 /* Extensions.swift */; };
 		122EF09A2690A33100888723 /* AudioVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF0992690A33100888723 /* AudioVisualizerView.swift */; };
@@ -17,6 +18,7 @@
 		122EF0A62690A4C000888723 /* RecordButtonKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122EF0A52690A4C000888723 /* RecordButtonKit.swift */; };
 		122EF0AB2690A73C00888723 /* StartRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 122EF0A92690A73B00888723 /* StartRecording.aiff */; };
 		122EF0AC2690A73C00888723 /* StopRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 122EF0AA2690A73C00888723 /* StopRecording.aiff */; };
+		123F568A2698A3DB0026958A /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123F56892698A3DB0026958A /* TestCell.swift */; };
 		123FBCF2269864ED00E2AEE2 /* ButtonsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FBCF1269864ED00E2AEE2 /* ButtonsVC.swift */; };
 		12495D3A268AFDB800DD6191 /* AuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12495D39268AFDB800DD6191 /* AuthorizationVC.swift */; };
 		12495D3C268B230200DD6191 /* FlashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12495D3B268B230200DD6191 /* FlashVC.swift */; };
@@ -76,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1201D2C2269A1F9B00EA7341 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		1211B40E267B495E00B2F9A2 /* Contrast&Gamma_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contrast&Gamma_VC.swift"; sourceTree = "<group>"; };
 		122EF0962690A2E100888723 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		122EF0992690A33100888723 /* AudioVisualizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerView.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		122EF0A82690A6FE00888723 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		122EF0A92690A73B00888723 /* StartRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StartRecording.aiff; sourceTree = "<group>"; };
 		122EF0AA2690A73C00888723 /* StopRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StopRecording.aiff; sourceTree = "<group>"; };
+		123F56892698A3DB0026958A /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		123FBCF1269864ED00E2AEE2 /* ButtonsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsVC.swift; sourceTree = "<group>"; };
 		12495D39268AFDB800DD6191 /* AuthorizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationVC.swift; sourceTree = "<group>"; };
 		12495D3B268B230200DD6191 /* FlashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashVC.swift; sourceTree = "<group>"; };
@@ -168,6 +172,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1201D2C4269A2A0F00EA7341 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				129530F9267296B40041F55F /* AppDelegate.swift */,
+				129530FB267296B40041F55F /* SceneDelegate.swift */,
+				129530FD267296B40041F55F /* MainMenuVC.swift */,
+				1201D2C2269A1F9B00EA7341 /* HeaderCollectionReusableView.swift */,
+				123F56892698A3DB0026958A /* TestCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		122EF0932690991A00888723 /* Microphone */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,11 +334,9 @@
 		129530F8267296B40041F55F /* Testik */ = {
 			isa = PBXGroup;
 			children = (
-				129530F9267296B40041F55F /* AppDelegate.swift */,
-				129530FB267296B40041F55F /* SceneDelegate.swift */,
-				129530FD267296B40041F55F /* MainMenuVC.swift */,
 				129530FF267296B40041F55F /* Main.storyboard */,
 				12953104267296B60041F55F /* LaunchScreen.storyboard */,
+				1201D2C4269A2A0F00EA7341 /* Model */,
 				12597D6926958DFD00D3D679 /* Сonnection */,
 				12BFFD1E268F7233009EDEFA /* Sound */,
 				12BA3288267F582300ED280D /* Display */,
@@ -701,12 +715,14 @@
 				122EF09D2690A39100888723 /* RecordingsVC.swift in Sources */,
 				12742AB3268864FE003D0BEE /* CompassVC.swift in Sources */,
 				123FBCF2269864ED00E2AEE2 /* ButtonsVC.swift in Sources */,
+				1201D2C3269A1F9B00EA7341 /* HeaderCollectionReusableView.swift in Sources */,
 				12A93836268DB78A00E3E7EC /* PhotoVC.swift in Sources */,
 				122EF0972690A2E100888723 /* Extensions.swift in Sources */,
 				124A0EDE2675022C00621D68 /* RGB_VC.swift in Sources */,
 				129530FC267296B40041F55F /* SceneDelegate.swift in Sources */,
 				1259866B26875B5600EA42F0 /* AmbientLightSensorVC.swift in Sources */,
 				1211B40F267B495E00B2F9A2 /* Contrast&Gamma_VC.swift in Sources */,
+				123F568A2698A3DB0026958A /* TestCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
