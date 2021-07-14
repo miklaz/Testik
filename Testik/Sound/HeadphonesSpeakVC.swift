@@ -16,7 +16,7 @@ class HeadphonesSpeakVC: UIViewController {
     let pianoSound = URL(fileURLWithPath: Bundle.main.path(forResource: "testSound", ofType: "mp3")!)
     let fakeSound = URL(fileURLWithPath: Bundle.main.path(forResource: "fakeSound2", ofType: "mp3")!)
     var audioPlayer = AVAudioPlayer()
-    var headphonesConnected: Bool = false
+    var headphonesConnected: Bool = false  //to do
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,7 @@ class HeadphonesSpeakVC: UIViewController {
             showAlert("Couldn't load file :(")
         }
     }
+    
     
     func setupNotifications() {
         // Get the default notification center instance.

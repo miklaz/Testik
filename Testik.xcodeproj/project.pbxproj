@@ -22,7 +22,13 @@
 		124A0EDE2675022C00621D68 /* RGB_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EDD2675022C00621D68 /* RGB_VC.swift */; };
 		124A0EE32675024700621D68 /* TouchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EE22675024700621D68 /* TouchVC.swift */; };
 		124A0EE82675026500621D68 /* BWG_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EE72675026500621D68 /* BWG_VC.swift */; };
+		12597D6B26958E2500D3D679 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12597D6A26958E2500D3D679 /* Reachability.swift */; };
+		12597D6D26958E7700D3D679 /* WiFi_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12597D6C26958E7700D3D679 /* WiFi_VC.swift */; };
 		1259866B26875B5600EA42F0 /* AmbientLightSensorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1259866A26875B5600EA42F0 /* AmbientLightSensorVC.swift */; };
+		126704D12696F8E70046455B /* BluetoothVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126704D02696F8E70046455B /* BluetoothVC.swift */; };
+		1270432226971ED100CB55D7 /* BluetoothVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1270432126971ED100CB55D7 /* BluetoothVC+Ext.swift */; };
+		1270432526971FD100CB55D7 /* GPS_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1270432426971FD100CB55D7 /* GPS_VC.swift */; };
+		127043272697205300CB55D7 /* GPS_VC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127043262697205300CB55D7 /* GPS_VC+Ext.swift */; };
 		12742AAE268861C5003D0BEE /* CanvasTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12742AAD268861C5003D0BEE /* CanvasTouch.swift */; };
 		12742AB1268864D9003D0BEE /* CanvasCompassV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12742AB0268864D9003D0BEE /* CanvasCompassV.swift */; };
 		12742AB3268864FE003D0BEE /* CompassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12742AB2268864FE003D0BEE /* CompassVC.swift */; };
@@ -43,6 +49,7 @@
 		12B0556F268F8B6A00C778F2 /* testSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12B0556E268F8B6A00C778F2 /* testSound.mp3 */; };
 		12B05571268F8DCA00C778F2 /* FrontSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B05570268F8DCA00C778F2 /* FrontSpeakVC.swift */; };
 		12BFFD20268F775C009EDEFA /* MainSpeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFFD1F268F775C009EDEFA /* MainSpeakVC.swift */; };
+		12C3A3492697375200604611 /* CellularVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C3A3482697375200604611 /* CellularVC.swift */; };
 		8A9BD86054FE3101ED4FB4ED /* Pods_Testik_TestikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22A903EF22D9BCFE6F5A7F9 /* Pods_Testik_TestikUITests.framework */; };
 		BB3FE5C4A7DBA71A173EB613 /* Pods_Testik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA4F2F8739EDB85A42D2F9C /* Pods_Testik.framework */; };
 		FC297C36B92A92E393A7AECC /* Pods_TestikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA17552F5248380CD895755 /* Pods_TestikTests.framework */; };
@@ -82,7 +89,13 @@
 		124A0EDD2675022C00621D68 /* RGB_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB_VC.swift; sourceTree = "<group>"; };
 		124A0EE22675024700621D68 /* TouchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchVC.swift; sourceTree = "<group>"; };
 		124A0EE72675026500621D68 /* BWG_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWG_VC.swift; sourceTree = "<group>"; };
+		12597D6A26958E2500D3D679 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		12597D6C26958E7700D3D679 /* WiFi_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFi_VC.swift; sourceTree = "<group>"; };
 		1259866A26875B5600EA42F0 /* AmbientLightSensorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientLightSensorVC.swift; sourceTree = "<group>"; };
+		126704D02696F8E70046455B /* BluetoothVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothVC.swift; sourceTree = "<group>"; };
+		1270432126971ED100CB55D7 /* BluetoothVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BluetoothVC+Ext.swift"; sourceTree = "<group>"; };
+		1270432426971FD100CB55D7 /* GPS_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPS_VC.swift; sourceTree = "<group>"; };
+		127043262697205300CB55D7 /* GPS_VC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPS_VC+Ext.swift"; sourceTree = "<group>"; };
 		12742AAD268861C5003D0BEE /* CanvasTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasTouch.swift; sourceTree = "<group>"; };
 		12742AB0268864D9003D0BEE /* CanvasCompassV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasCompassV.swift; sourceTree = "<group>"; };
 		12742AB2268864FE003D0BEE /* CompassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassVC.swift; sourceTree = "<group>"; };
@@ -110,6 +123,7 @@
 		12B0556E268F8B6A00C778F2 /* testSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testSound.mp3; sourceTree = "<group>"; };
 		12B05570268F8DCA00C778F2 /* FrontSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontSpeakVC.swift; sourceTree = "<group>"; };
 		12BFFD1F268F775C009EDEFA /* MainSpeakVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSpeakVC.swift; sourceTree = "<group>"; };
+		12C3A3482697375200604611 /* CellularVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularVC.swift; sourceTree = "<group>"; };
 		1BDA99E3F255445D3127D7EF /* Pods-Testik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testik.release.xcconfig"; path = "Target Support Files/Pods-Testik/Pods-Testik.release.xcconfig"; sourceTree = "<group>"; };
 		3FA4F2F8739EDB85A42D2F9C /* Pods_Testik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Testik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F4563BD6F2F86907E6E88D /* Pods-TestikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestikTests.release.xcconfig"; path = "Target Support Files/Pods-TestikTests/Pods-TestikTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +229,36 @@
 			path = Camera;
 			sourceTree = "<group>";
 		};
+		12597D6926958DFD00D3D679 /* Сonnection */ = {
+			isa = PBXGroup;
+			children = (
+				12597D6C26958E7700D3D679 /* WiFi_VC.swift */,
+				12C3A3482697375200604611 /* CellularVC.swift */,
+				1270432426971FD100CB55D7 /* GPS_VC.swift */,
+				127043262697205300CB55D7 /* GPS_VC+Ext.swift */,
+				1270432326971FB500CB55D7 /* Bluetooth */,
+				12597D6E26962E1A00D3D679 /* Helps */,
+			);
+			path = "Сonnection";
+			sourceTree = "<group>";
+		};
+		12597D6E26962E1A00D3D679 /* Helps */ = {
+			isa = PBXGroup;
+			children = (
+				12597D6A26958E2500D3D679 /* Reachability.swift */,
+			);
+			path = Helps;
+			sourceTree = "<group>";
+		};
+		1270432326971FB500CB55D7 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				126704D02696F8E70046455B /* BluetoothVC.swift */,
+				1270432126971ED100CB55D7 /* BluetoothVC+Ext.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
 		12742AAC26886129003D0BEE /* Touch */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +319,7 @@
 				129530FD267296B40041F55F /* ViewController.swift */,
 				129530FF267296B40041F55F /* Main.storyboard */,
 				12953104267296B60041F55F /* LaunchScreen.storyboard */,
+				12597D6926958DFD00D3D679 /* Сonnection */,
 				12BFFD1E268F7233009EDEFA /* Sound */,
 				12BA3288267F582300ED280D /* Display */,
 				1289A984267F5CE8002070FB /* Sensors */,
@@ -607,18 +652,25 @@
 				1292E90B2692FCCC00418C4A /* HeadphonesSpeakVC.swift in Sources */,
 				12A93838268DC54100E3E7EC /* PhotoVC+Ext.swift in Sources */,
 				12742AAE268861C5003D0BEE /* CanvasTouch.swift in Sources */,
+				12597D6D26958E7700D3D679 /* WiFi_VC.swift in Sources */,
 				122EF0A42690A48F00888723 /* RecordButton.swift in Sources */,
 				122EF0A22690A43C00888723 /* RecorderVC.swift in Sources */,
 				12BFFD20268F775C009EDEFA /* MainSpeakVC.swift in Sources */,
+				1270432526971FD100CB55D7 /* GPS_VC.swift in Sources */,
 				122EF0A62690A4C000888723 /* RecordButtonKit.swift in Sources */,
 				124A0EE82675026500621D68 /* BWG_VC.swift in Sources */,
 				1289A988267F6081002070FB /* DistanсeVC.swift in Sources */,
 				12495D3C268B230200DD6191 /* FlashVC.swift in Sources */,
+				1270432226971ED100CB55D7 /* BluetoothVC+Ext.swift in Sources */,
+				12C3A3492697375200604611 /* CellularVC.swift in Sources */,
 				12495D3A268AFDB800DD6191 /* AuthorizationVC.swift in Sources */,
 				1289A986267F5D83002070FB /* AccelerVC.swift in Sources */,
+				127043272697205300CB55D7 /* GPS_VC+Ext.swift in Sources */,
+				12597D6B26958E2500D3D679 /* Reachability.swift in Sources */,
 				122EF09A2690A33100888723 /* AudioVisualizerView.swift in Sources */,
 				12B05571268F8DCA00C778F2 /* FrontSpeakVC.swift in Sources */,
 				124A0EE32675024700621D68 /* TouchVC.swift in Sources */,
+				126704D12696F8E70046455B /* BluetoothVC.swift in Sources */,
 				12742AB1268864D9003D0BEE /* CanvasCompassV.swift in Sources */,
 				129530FA267296B40041F55F /* AppDelegate.swift in Sources */,
 				122EF09D2690A39100888723 /* RecordingsVC.swift in Sources */,

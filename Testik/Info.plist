@@ -2,12 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>To 👂 you</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>To 💾 you PHOTO</string>
-	<key>NSCameraUsageDescription</key>
-	<string>To 👀 you</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>To check Bluetooth</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Can this app communicate with Bluetooth peripherals?</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -22,14 +20,31 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>prefs</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>To 👀 you</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Проверка работы</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Для определения местополжения</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>To 👂 you</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To 💾 you PHOTO</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
