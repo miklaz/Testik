@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1211B40F267B495E00B2F9A2 /* Contrast&Gamma_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1211B40E267B495E00B2F9A2 /* Contrast&Gamma_VC.swift */; };
+		124A0EDE2675022C00621D68 /* RGB_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EDD2675022C00621D68 /* RGB_VC.swift */; };
+		124A0EE32675024700621D68 /* Touch_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EE22675024700621D68 /* Touch_VC.swift */; };
+		124A0EE82675026500621D68 /* BWG_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A0EE72675026500621D68 /* BWG_VC.swift */; };
 		129530FA267296B40041F55F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530F9267296B40041F55F /* AppDelegate.swift */; };
 		129530FC267296B40041F55F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530FB267296B40041F55F /* SceneDelegate.swift */; };
 		129530FE267296B40041F55F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129530FD267296B40041F55F /* ViewController.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1211B40E267B495E00B2F9A2 /* Contrast&Gamma_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contrast&Gamma_VC.swift"; sourceTree = "<group>"; };
+		124A0EDD2675022C00621D68 /* RGB_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB_VC.swift; sourceTree = "<group>"; };
+		124A0EE22675024700621D68 /* Touch_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_VC.swift; sourceTree = "<group>"; };
+		124A0EE72675026500621D68 /* BWG_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWG_VC.swift; sourceTree = "<group>"; };
 		129530F6267296B40041F55F /* Testik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129530F9267296B40041F55F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		129530FB267296B40041F55F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		124A0EEC2675027B00621D68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				129530FD267296B40041F55F /* ViewController.swift */,
+				12BA3288267F582300ED280D /* Display */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		129530ED267296B40041F55F = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +118,7 @@
 			children = (
 				129530F9267296B40041F55F /* AppDelegate.swift */,
 				129530FB267296B40041F55F /* SceneDelegate.swift */,
-				129530FD267296B40041F55F /* ViewController.swift */,
+				124A0EEC2675027B00621D68 /* View */,
 				129530FF267296B40041F55F /* Main.storyboard */,
 				12953102267296B60041F55F /* Assets.xcassets */,
 				12953104267296B60041F55F /* LaunchScreen.storyboard */,
@@ -126,6 +143,17 @@
 				1295311D267296B60041F55F /* Info.plist */,
 			);
 			path = TestikUITests;
+			sourceTree = "<group>";
+		};
+		12BA3288267F582300ED280D /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				124A0EE22675024700621D68 /* Touch_VC.swift */,
+				124A0EDD2675022C00621D68 /* RGB_VC.swift */,
+				124A0EE72675026500621D68 /* BWG_VC.swift */,
+				1211B40E267B495E00B2F9A2 /* Contrast&Gamma_VC.swift */,
+			);
+			path = Display;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				129530FE267296B40041F55F /* ViewController.swift in Sources */,
+				124A0EE82675026500621D68 /* BWG_VC.swift in Sources */,
+				124A0EE32675024700621D68 /* Touch_VC.swift in Sources */,
 				129530FA267296B40041F55F /* AppDelegate.swift in Sources */,
+				124A0EDE2675022C00621D68 /* RGB_VC.swift in Sources */,
 				129530FC267296B40041F55F /* SceneDelegate.swift in Sources */,
+				1211B40F267B495E00B2F9A2 /* Contrast&Gamma_VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6888952VPD;
 				INFOPLIST_FILE = Testik/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6888952VPD;
 				INFOPLIST_FILE = Testik/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
