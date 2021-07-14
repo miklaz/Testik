@@ -29,10 +29,9 @@ class HeadphonesSpeakVC: UIViewController {
             audioPlayer = try AVAudioPlayer(contentsOf: fakeSound)
             audioPlayer.play()
         } catch {
-            showAlert("Couldn't load file :(")
+            print("Couldn't load file :(")
         }
     }
-    
     
     func setupNotifications() {
         // Get the default notification center instance.
@@ -92,6 +91,7 @@ class HeadphonesSpeakVC: UIViewController {
     }
     
     @IBAction func dismissAction(_ sender: Any) {
+        NotificationCenter.default.removeObserver(self)
         self.dismiss(animated: true, completion: nil)
     }
 

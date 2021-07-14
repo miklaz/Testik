@@ -21,11 +21,11 @@ final class DistanсeVC: UIViewController {
         let device = UIDevice.current
         device.isProximityMonitoringEnabled = true
         if device.isProximityMonitoringEnabled {
-            NotificationCenter.default.addObserver(self, selector: #selector(proximityChanged(notification:)), name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"), object: device)
+            NotificationCenter.default.addObserver(self, selector: #selector(proximityChangedd(notification:)), name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"), object: device)
         }
     }
     
-    @objc func proximityChanged(notification: NSNotification) {
+    @objc func proximityChangedd(notification: NSNotification) {
         
         if let device = notification.object as? UIDevice {
             print("\(device.name) detected!")
@@ -35,6 +35,7 @@ final class DistanсeVC: UIViewController {
     
     @IBAction func dismissAction(_ sender: Any) {
         _ = UIDevice.current.isProximityMonitoringEnabled = false
+        NotificationCenter.default.removeObserver(self)
         self.dismiss(animated: true, completion: nil)
     }
     

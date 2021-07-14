@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class GPS_VC: UIViewController {
+final class GPS_VC: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     //@IBOutlet weak var noButton: UIButton!

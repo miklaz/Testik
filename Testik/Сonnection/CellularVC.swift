@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CellularVC: UIViewController {
+final class CellularVC: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet var settingsButton: UIButton!
