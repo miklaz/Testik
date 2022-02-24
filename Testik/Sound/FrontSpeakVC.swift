@@ -10,11 +10,13 @@ import AVFoundation
 
 final class FrontSpeakVC: UIViewController {
 
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var statusLabel: UILabel!
     
     let pianoSound = URL(fileURLWithPath: Bundle.main.path(forResource: "testSound", ofType: "mp3")!)
     var audioPlayer = AVAudioPlayer()
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -73,6 +75,7 @@ final class FrontSpeakVC: UIViewController {
         self.present(alert, animated: true)
     }
     
+    // MARK: - IBActions
     @IBAction func dismissAction(_ sender: Any) {
         _ = UIDevice.current.isProximityMonitoringEnabled = false
         NotificationCenter.default.removeObserver(self)

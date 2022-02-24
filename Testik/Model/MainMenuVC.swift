@@ -9,11 +9,13 @@ import UIKit
 
 final class MainMenuVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    // MARK: - Const, Var & Outlets
     @IBOutlet var collectionView: UICollectionView!
     
     let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
     var tests = ["Touch", "RGB", "BWG", "Contrast", "Main Speaker", "Front Speaker", "Headphones", "Microphone", "Wi-Fi", "Bluetooth", "Cellular", "GPS", "Camera", "Flash", "AmbiLight", "Accelerometer", "Distanсe", "Authorization", "Compass", "Charge", "Buttons", "Vibration"]
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

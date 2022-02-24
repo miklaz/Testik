@@ -10,6 +10,7 @@ import MapKit
 
 final class GPS_VC: UIViewController {
 
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var mapView: MKMapView!
     //@IBOutlet weak var noButton: UIButton!
     //@IBOutlet weak var yesButton: UIButton!
@@ -17,6 +18,7 @@ final class GPS_VC: UIViewController {
     
     let locationManager = CLLocationManager()
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         statusLabel.text = "You are here?"
@@ -78,6 +80,7 @@ final class GPS_VC: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    // MARK: - IBActions
     @IBAction func yesAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -86,7 +89,5 @@ final class GPS_VC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    
-
 }
 

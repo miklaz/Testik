@@ -9,6 +9,7 @@ import UIKit
 
 final class ChargeVC: UIViewController {
 
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var checkButton: UIButton!
     
@@ -17,6 +18,7 @@ final class ChargeVC: UIViewController {
         statusLabel.text = "Plug in the power cable and press the button"
     }
     
+    // MARK: - Methods
     func checkForCharging() {
         UIDevice.current.isBatteryMonitoringEnabled = true
         
@@ -31,26 +33,7 @@ final class ChargeVC: UIViewController {
         }
     }
     
-    /*
-    func activateCharge() {
-        UIDevice.current.isBatteryMonitoringEnabled = true
-        NotificationCenter.default.addObserver(self, selector: #selector(chargeChanged(notification:)), name: NSNotification.Name(rawValue: "UIDeviceBatteryStateDidChange"), object: nil)
-        
-    }
-    
-    @objc func chargeChanged(notification: NSNotification) {
-        if UIDevice.current.batteryState == .charging {
-            statusLabel.text = "Okey, battery is charging!"
-            statusLabel.textColor = .systemGreen
-            CheckButton.alpha = 0
-        }
-        else if UIDevice.current.batteryState == .unplugged {
-            statusLabel.text = "Check the cable!"
-            statusLabel.textColor = .systemYellow
-        }
-    }
-    */
-    
+    // MARK: - IBActions
     @IBAction func CheckCargeButton(_ sender: Any) {
         checkForCharging()
     }

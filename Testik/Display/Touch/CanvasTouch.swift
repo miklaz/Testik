@@ -9,6 +9,10 @@ import UIKit
 
 final class CanvasTouch: UIView {
     
+    // MARK: - Const, Var & Outlets
+    var lines = [[CGPoint]]()
+    
+    // MARK: - Methods
     override func draw(_ rect: CGRect) {
         // custom dawing
         super.draw(rect)
@@ -33,8 +37,6 @@ final class CanvasTouch: UIView {
         
         context.strokePath()
     }
-    
-    var lines = [[CGPoint]]()
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         lines.append([CGPoint]())

@@ -9,6 +9,7 @@ import UIKit
 
 class AudioVisualizerView: UIView {
     
+    // MARK: - Const, Var & Outlets
     // Bar width
     var barWidth: CGFloat = 4.0
     // Indicate that waveform should draw active/inactive state

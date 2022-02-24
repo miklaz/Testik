@@ -10,10 +10,11 @@ import UIKit
 
 final class TouchVC: UIViewController {
 
+    // MARK: - Const, Var & Outlets
     var canvas = CanvasTouch()
-    
     @IBOutlet var dismissButton: UIButton!
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +28,7 @@ final class TouchVC: UIViewController {
          return true
     }
     
+    // MARK: - IBActions
     @IBAction func dismissAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

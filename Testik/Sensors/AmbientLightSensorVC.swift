@@ -8,14 +8,12 @@
 import UIKit
 
 final class AmbientLightSensorVC: UIViewController {
-
+    
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var statusLabel: UILabel!
     let lightStartStatus = UIScreen.main.brightness
     
-    deinit {
-        removeObservers()
-    }
-
+    // MARK: - Methods
     func addObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(onScreenBrightnessChanged(_:)), name: UIScreen.brightnessDidChangeNotification, object:nil)
     }
@@ -40,6 +38,11 @@ final class AmbientLightSensorVC: UIViewController {
         
     }
     
+    deinit {
+        removeObservers()
+    }
+    
+    // MARK: - IBActions
     @IBAction func dismissAction(_ sender: Any) {
         _ = UIDevice.current.isProximityMonitoringEnabled = false
         self.dismiss(animated: true, completion: nil)

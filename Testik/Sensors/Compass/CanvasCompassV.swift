@@ -9,6 +9,7 @@ import UIKit
 
 final class CanvasCompassV: UIView {
     
+    // MARK: - Const, Var & Outlets
     var halfFrameWidth: CGFloat = 0
     var fullFrameWidth: CGFloat = 0
     let needleBottomWith: CGFloat = 10
@@ -16,6 +17,7 @@ final class CanvasCompassV: UIView {
     var centerView: CGPoint?
     var changeDegree = 90
     
+    // MARK: - Methods
     override func draw(_ rect: CGRect) {
         // Drawing code
         

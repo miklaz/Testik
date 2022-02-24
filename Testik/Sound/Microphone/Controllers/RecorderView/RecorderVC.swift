@@ -24,12 +24,12 @@ let keyID = "key"
 
 class RecorderVC: UIViewController {
 
-    //MARK:- Properties
+    // MARK: - Const, Var & Outlets
     var handleView = UIView()
     var recordButton = RecordButton()
     var timeLabel = UILabel()
     var audioView = AudioVisualizerView()
-    let settings = [AVFormatIDKey: kAudioFormatLinearPCM, AVLinearPCMBitDepthKey: 16, AVLinearPCMIsFloatKey: true, AVSampleRateKey: Float32(48000), AVNumberOfChannelsKey: 1] as [String : Any]
+    let settings = [AVFormatIDKey: kAudioFormatLinearPCM, AVLinearPCMBitDepthKey: 16, AVLinearPCMIsFloatKey: true, AVSampleRateKey: Float32(44100), AVNumberOfChannelsKey: 1] as [String : Any] // 44100 | 48000
     let audioEngine = AVAudioEngine()
     private var renderTs: Double = 0
     private var recordingTs: Double = 0
@@ -37,7 +37,6 @@ class RecorderVC: UIViewController {
     private var audioFile: AVAudioFile?
     weak var delegate: RecorderViewControllerDelegate?
     
-    //MARK:- Outlets
     @IBOutlet weak var fadeView: UIView!
 
     //MARK:- Life Cycle
@@ -61,7 +60,7 @@ class RecorderVC: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
     
-    //MARK:- Setup Methods
+    //MARK:- Methods
     fileprivate func setupHandelView() {
         handleView.layer.cornerRadius = 2.5
         handleView.backgroundColor = UIColor(r: 208, g: 207, b: 205)

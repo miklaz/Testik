@@ -9,11 +9,13 @@ import UIKit
 
 final class CellularVC: UIViewController {
 
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet var settingsButton: UIButton!
     
     var prefsURl: String = ""
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         statusLabel.text = ""
@@ -77,6 +79,7 @@ final class CellularVC: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 
+    // MARK: - IBActions
     @IBAction func openSettingsAction(_ sender: Any) {
         showAlertLocation (title: "Open Settings?", message: "", url: URL(string: prefsURl))
     }

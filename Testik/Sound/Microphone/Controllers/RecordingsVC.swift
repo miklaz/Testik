@@ -22,12 +22,11 @@ protocol RecordingsViewControllerDelegate: AnyObject {
 
 class RecordingsVC: UIViewController {
     
-    //MARK:- Properties
+    // MARK: - Const, Var & Outlets
     private var recordings: [Recording] = []
     private var audioPlayer: AVAudioPlayer?
     weak var delegate: RecordingsViewControllerDelegate?
 
-    //MARK:- Outlets
     @IBOutlet var fadeView: UIView!
     @IBOutlet var tableView: UITableView!
     
@@ -49,12 +48,11 @@ class RecordingsVC: UIViewController {
         super.viewWillDisappear(animated)
     }
     
-    //MARK:- Setup Methods
+    //MARK:- Methods
     fileprivate func setupTableView() {
         self.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 180, right: 0)
     }
 
-    // MARK:- Data
     func loadRecordings() {
         self.recordings.removeAll()
         let filemanager = FileManager.default
@@ -71,7 +69,6 @@ class RecordingsVC: UIViewController {
         }
     }
     
-    // MARK:- Playback
     private func play(url: URL) {
         if let d = self.delegate {
             d.didStartPlayback()

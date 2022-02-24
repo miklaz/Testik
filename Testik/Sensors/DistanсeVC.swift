@@ -8,9 +8,11 @@
 import UIKit
 
 final class DistanсeVC: UIViewController {
-
+    
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var statusLabel: UILabel!
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         statusLabel.text = "Hold there until the test is comlite."
@@ -33,6 +35,7 @@ final class DistanсeVC: UIViewController {
         }
     }
     
+    // MARK: - IBActions
     @IBAction func dismissAction(_ sender: Any) {
         _ = UIDevice.current.isProximityMonitoringEnabled = false
         NotificationCenter.default.removeObserver(self)

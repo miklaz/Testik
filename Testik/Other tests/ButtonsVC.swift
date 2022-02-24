@@ -10,12 +10,14 @@ import AVFoundation
 
 final class ButtonsVC: UIViewController {
 
+    // MARK: - Const, Var & Outlets
     @IBOutlet var upVolumeLabel: UILabel!
     @IBOutlet var downVolumeLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     
     private var audioLevel : Float = 0.0
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,6 +53,7 @@ final class ButtonsVC: UIViewController {
         }
     }
     
+    // MARK: - IBActions
     @IBAction func dismissAction(_ sender: Any) {
         NotificationCenter.default.removeObserver(self)
         self.dismiss(animated: true, completion: nil)

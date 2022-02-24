@@ -9,6 +9,7 @@ import UIKit
 
 final class HeaderCollectionReusableView: UICollectionReusableView {
     
+    // MARK: - Const, Var & Outlets
     static let identifier = "HeaderCollectionReusableView"
     
     private let label: UILabel = {
@@ -18,6 +19,7 @@ final class HeaderCollectionReusableView: UICollectionReusableView {
         return label
     } ()
     
+    // MARK: - Methods
     public func configure () {
         addSubview(label)
     }

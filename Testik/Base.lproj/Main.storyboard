@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DF1-kG-EgP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DF1-kG-EgP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -554,7 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKO-kG-GaO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2551" y="1819"/>
+            <point key="canvasLocation" x="3460.8695652173915" y="1818.75"/>
         </scene>
         <!--PhotoVC-->
         <scene sceneID="Udi-TY-gDT">
@@ -618,7 +618,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6Y-bR-9Bj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="1819"/>
+            <point key="canvasLocation" x="2684.057971014493" y="1818.75"/>
         </scene>
         <!--Main SpeakVC-->
         <scene sceneID="9Hb-S5-rvK">
@@ -1016,7 +1016,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9H0-Ac-Saa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2551" y="1011"/>
+            <point key="canvasLocation" x="3460.8695652173915" y="1010.4910714285713"/>
         </scene>
         <!--BluetoothVC-->
         <scene sceneID="kXt-z7-Ckp">
@@ -1079,7 +1079,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcj-rY-1hh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3354" y="1010"/>
+            <point key="canvasLocation" x="4263.768115942029" y="1009.8214285714286"/>
         </scene>
         <!--Main MenuVC-->
         <scene sceneID="F8g-tB-KQB">
@@ -1145,13 +1145,14 @@
                             <constraint firstItem="gK0-Uq-qh4" firstAttribute="top" secondItem="Fie-9u-1FQ" secondAttribute="top" id="iGO-ih-0W2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lve-XJ-wgo"/>
                     <connections>
                         <outlet property="collectionView" destination="gK0-Uq-qh4" id="21L-Lu-DFi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uEe-3m-g8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1132" y="1455"/>
+            <point key="canvasLocation" x="-223.18840579710147" y="1454.4642857142856"/>
         </scene>
         <!--GPS_VC-->
         <scene sceneID="jyK-aG-FgV">
@@ -1215,7 +1216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbv-7C-XjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4158" y="1010"/>
+            <point key="canvasLocation" x="5068.115942028986" y="1009.8214285714286"/>
         </scene>
         <!--CellularVC-->
         <scene sceneID="a1k-ip-FGk">
@@ -1247,11 +1248,11 @@
                                 <rect key="frame" x="100" y="423" width="214" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.36201562380000002" blue="0.75053537439999995" alpha="0.17895184450000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="ECW-d6-E37"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="ECW-d6-E37"/>
                                     <constraint firstAttribute="height" constant="50" id="s72-ED-tV5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Open Wi-Fi Settings"/>
+                                <state key="normal" title="Open Celluar Settings"/>
                                 <connections>
                                     <action selector="openSettingsAction:" destination="xOr-Rk-3Of" eventType="touchUpInside" id="Y46-Dd-Sap"/>
                                 </connections>
@@ -1278,7 +1279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugF-Yv-8SV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="1011"/>
+            <point key="canvasLocation" x="2684.057971014493" y="1010.4910714285713"/>
         </scene>
         <!--VibrationVC-->
         <scene sceneID="gEd-M2-Zdf">

@@ -9,7 +9,8 @@ import UIKit
 import AVFoundation
 
 final class HeadphonesSpeakVC: UIViewController {
-
+    
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet var playButton: UIButton!
     
@@ -18,6 +19,7 @@ final class HeadphonesSpeakVC: UIViewController {
     var audioPlayer = AVAudioPlayer()
     var headphonesConnected: Bool = false  //to do
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -81,6 +83,7 @@ final class HeadphonesSpeakVC: UIViewController {
         self.present(alert, animated: true)
     }
     
+    // MARK: - IBActions
     @IBAction func play(_ sender: UIButton) {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: pianoSound)

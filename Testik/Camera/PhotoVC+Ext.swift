@@ -6,12 +6,11 @@
 //
 
 import UIKit
-
-import UIKit
 import AVFoundation
 
 extension PhotoVC: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    // MARK: - Methods
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         // Если нажали на кнопку Отмена, то UIImagePickerController надо закрыть
         picker.dismiss(animated: true)

@@ -9,16 +9,17 @@ import UIKit
 
 final class RGB_VC: UIViewController {
     
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var hideItems: UILabel!
     
-    
     let colorOpt = [UIColor.red, UIColor.green, UIColor.blue]
     let colorOptItem = [UIColor.white, UIColor.black, UIColor.white]
     var isBleach = false
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
@@ -36,6 +37,7 @@ final class RGB_VC: UIViewController {
         self.hideItems.alpha = self.isBleach ? 0 : 1.0
     }
     
+    // MARK: - IBActions
     @IBAction func changeColor(_ sender: Any) {
         self.colorView.backgroundColor = colorOpt[self.segmentControl.selectedSegmentIndex]
         self.hideItems.textColor = colorOptItem[self.segmentControl.selectedSegmentIndex]

@@ -9,16 +9,19 @@ import UIKit
 import LocalAuthentication
 
 final class AuthorizationVC: UIViewController {
-
+    
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var tapForTestButton: UIButton!
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.statusLabel.text = ""
     }
     
+    // MARK: - IBActions
     @IBAction func touchID(_ sender: Any) {
         let context:LAContext = LAContext ()
         

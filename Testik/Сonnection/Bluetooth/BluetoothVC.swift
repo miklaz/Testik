@@ -10,11 +10,13 @@ import CoreBluetooth
 
 final class BluetoothVC: UIViewController{
     
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet var bluetoothSettingsButton: UIButton!
     
     var centralManager: CBCentralManager!
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         centralManager = CBCentralManager(delegate: self, queue: nil)
@@ -44,6 +46,7 @@ final class BluetoothVC: UIViewController{
         
     }
 
+    // MARK: - IBActions
     @IBAction func openWiFiSettings(_ sender: Any) {
         showAlertBluetoothSettings (title: "Open Bluetooth Settings?", message: "")
     }

@@ -9,12 +9,16 @@ import Foundation
 import SystemConfiguration
 
 class Reachability {
+    
+    // MARK: - Const, Var & Outlets
     var hostname: String?
     var isRunning = false
     var isReachableOnWWAN: Bool
     var reachability: SCNetworkReachability?
     var reachabilityFlags = SCNetworkReachabilityFlags()
     let reachabilitySerialQueue = DispatchQueue(label: "ReachabilityQueue")
+    
+    // MARK: - init
     init(hostname: String) throws {
         guard let reachability = SCNetworkReachabilityCreateWithName(nil, hostname) else {
             throw Network.Error.failedToCreateWith(hostname)
@@ -56,6 +60,7 @@ class Reachability {
 
 extension Reachability {
     
+    // MARK: - Methods
     func start() throws {
         guard let reachability = reachability, !isRunning else { return }
         var context = SCNetworkReachabilityContext(version: 0, info: nil, retain: nil, release: nil, copyDescription: nil)

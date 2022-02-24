@@ -9,9 +9,11 @@ import UIKit
 
 final class WiFi_VC: UIViewController {
     
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet var wifiSettingsButton: UIButton!
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         statusLabel.text = ""
@@ -70,6 +72,7 @@ final class WiFi_VC: UIViewController {
         
     }
 
+    // MARK: - IBActions
     @IBAction func openWiFiSettings(_ sender: Any) {
         showAlertWiFiSettings (title: "Open Wi-Fi Settings?", message: "")
     }

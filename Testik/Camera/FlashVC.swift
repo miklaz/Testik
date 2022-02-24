@@ -10,9 +10,11 @@ import AVFoundation
 
 final class FlashVC: UIViewController {
     
+    // MARK: - Const, Var & Outlets
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet var torchButton: UIButton!
     
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,6 +53,7 @@ final class FlashVC: UIViewController {
         }
     }
     
+    // MARK: - IBActions
     @IBAction func flashActive(_ sender: Any) {
         flashlight()
     }
@@ -72,9 +75,6 @@ final class FlashVC: UIViewController {
                 print(error)
             }
         }
-        
-        
     }
     
-
 }
